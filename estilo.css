@@ -1,0 +1,209 @@
+/*Config padrão*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+    --corDetalhes: #3bd9d9;
+    --corDetalhes2: #b527cf;
+    --corTexto: #fff;
+    --corFundo: rgba(255, 255, 255, 0.055);
+}
+
+#container {
+    background-image: url('./img/Fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color:var(--corTexto);
+    padding: 0px 40px;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.fadeout {
+    opacity: 0;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: all 5s;
+}
+/*Config padrão*/
+
+
+
+
+
+/*Config header*/
+header {
+    background-color: var(--corFundo);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#head-title {
+    color: var(--corDetalhes);
+}
+
+#nav-principal {
+    margin-right: 70px;
+    align-self: center;
+}
+
+
+#nav-principal a {
+     text-decoration: none;
+     color: var(--corTexto);
+     margin: 10px;
+     padding: 5px;
+}
+
+#nav-principal a:hover {
+    background-image: linear-gradient(to right, var(--corDetalhes), var(--corDetalhes2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.active {
+    border-bottom: 2px solid  var(--corDetalhes);
+}
+/*Config header*/
+
+
+
+
+
+/*Config conteúdo*/
+#sessao1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#conteudo-central {
+    padding: 20px;
+    text-align: center;
+}
+
+#conteudo-central p {
+    margin-bottom:5px;
+    font-size: 25px;
+}
+
+#conteudo-central h1 {
+    margin-bottom:5px;
+    font-size: 60px;
+}
+
+#conteudo-central h4 {
+    margin-bottom:5px;
+    font-size: 30px;
+}
+
+#conteudo-central i {
+    margin-right: 5px;
+}
+
+#texto-destaque {
+    background-image: linear-gradient(to right,  var(--corDetalhes), var(--corDetalhes2) );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border-right: 2px solid rgba(255, 255, 255, 0.219) ;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.digitar {
+    animation: pisca 400ms infinite normal, some 5s steps(25) infinite normal;
+}
+
+@keyframes pisca {
+    fron {border-right: 2px solid rgba(255, 255, 255, 0.247) ;}
+    to {border-right: 2px solid transparent ;}
+}
+
+
+@keyframes some {
+    0%{ width: 220px; }
+    50% {width: 415px;}
+    100%{ width: 220px; }
+}
+
+#btn-git {
+     padding: 10px;
+     border-radius: 10px;
+     border: 2px solid var(--corDetalhes2);
+     background-color: transparent;
+     color: var(--corTexto);
+     margin: 10px;
+     width: 100px;
+}
+
+#btn-git:hover {
+    background-color: var(--corFundo);
+    animation: botao;
+	animation-duration: 300ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#btn-link {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--corDetalhes);
+    background-color: transparent;
+    color: var(--corTexto);
+    margin: 10px;
+    width: 100px;
+}
+
+#btn-link:hover {
+    background-color: var(--corFundo);
+    animation: botao;
+	animation-duration: 300ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes botao {
+	0%{transform: scale(1.0);}
+	100%{transform: scale(1.1);}
+}
+
+
+#icones-stacks {
+    border-top: 1px solid rgba(255, 255, 255, 0.185);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#icones-stacks p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.336) ;
+}
+
+#icones-stacks img {
+    cursor: pointer;
+    margin: 5px;
+}
+
+#icones-stacks img:hover {
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.541);
+}
+
+
