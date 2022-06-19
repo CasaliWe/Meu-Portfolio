@@ -41,7 +41,6 @@
 
 
 
-
 /*Config header*/
 header {
     background-color: var(--corFundo);
@@ -78,13 +77,100 @@ header {
 .active {
     border-bottom: 2px solid  var(--corDetalhes);
 }
+
+@media (max-width: 1200px) {
+    #nav-principal {display: none;}
+}
 /*Config header*/
 
 
 
 
+/*Config nav mobile*/
+#button-toggler {
+    display: none;
+}
 
-/*Config conteúdo*/
+#checkbox {
+    display: none;
+}
+
+.toggler {
+    position: relative;
+    align-self: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.line {
+    position: absolute;
+    width: 21px;
+    height: 2px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform .25s, opacity .35s;
+}
+
+.line--top {
+    transform: translateY(-7px);
+}
+
+.line--bottom {
+    transform:translateY(7px);
+}
+
+
+#nav-principal-mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.938);
+      position: absolute;
+      top: 0px;
+      overflow: hidden;
+      width: 0%;
+      height: 100vh;
+}
+
+#nav-principal-mobile a {
+    margin: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+#nav-principal-mobile a:active {
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#close-mobile {
+    font-size: 20px;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.555);
+    cursor: pointer;
+}
+
+.active-mobile {
+    border-bottom: 2px solid var(--corDetalhes);
+}
+
+@media (max-width: 1200px) {
+    #button-toggler {display: block;}
+}
+/*Config nav mobile*/
+
+
+
+
+
+/*Config conteúdo central carousel*/
 @keyframes fadeCarousel {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -100,10 +186,11 @@ header {
 #conteudo-central {
     padding: 20px 20px 0px 20px;
     text-align: center;
-    width: 60%;
+    width: 70%;
     animation-name: fadeCarousel;
     animation-duration: 2s;
     animation-direction: normal;
+    overflow: hidden;
 }
 
 #conteudo-central p {
@@ -133,12 +220,11 @@ header {
     border-right: 2px solid rgba(255, 255, 255, 0.219) ;
     white-space: nowrap;
     overflow: hidden;
-    padding: 20px;
-    margin-left: 100px;
+    margin: 0 auto;
 }
 
 .digitar {
-    animation: pisca 400ms infinite normal, some 5s steps(25) infinite normal;
+    animation: pisca 400ms infinite normal, some 4s steps(25) infinite normal;
 }
 
 @keyframes pisca {
@@ -148,9 +234,9 @@ header {
 
 
 @keyframes some {
-    0%{ width: 220px; }
-    50% {width: 415px;}
-    100%{ width: 220px; }
+    0%{ width: 0; }
+    50% {width:230px;}
+    100%{ width: 0; }
 }
 
 #btn-git {
@@ -194,7 +280,28 @@ header {
 	100%{transform: scale(1.1);}
 }
 
+@media (max-width: 1200px) {
+    #conteudo-central p {margin-bottom:5px;font-size: 19px;}
+    #conteudo-central h4 {margin-bottom:5px;font-size: 25px;}
+    #btn-git {margin: 5px;width: 85px; font-size: 12px;}
+    #btn-link {margin: 5px;width: 85px; font-size: 12px;}
+    #conteudo-central {padding: 10px 10px 0px 10px;text-align: center;width: 80%;}
+}
 
+@media (max-width: 700px) {
+    #conteudo-central p {margin-bottom:5px;font-size: 16px;}
+    #conteudo-central h4 {margin-bottom:5px;font-size: 20px;}
+    #btn-git {margin: 5px;width: 80px; font-size: 10px;}
+    #btn-link {margin: 5px;width: 80px; font-size: 10px;}
+    #conteudo-central {padding: 10px 10px 0px 10px;text-align: center;width: 95%;}
+    #sessao1 {margin: 15px;}
+}
+/*Config conteúdo central carousel*/
+
+
+
+
+/*Icones stacks*/
 #icones-stacks {
     border-top: 1px solid rgba(255, 255, 255, 0.185);
     margin-top: 20px;
@@ -215,6 +322,103 @@ header {
     box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.541);
 }
 
+#icones-stacks-mobile {
+    border-top: 1px solid rgba(255, 255, 255, 0.185);
+    margin-top: 20px;
+    padding-top: 20px;
+    display: none;
+}
+
+#icones-stacks-mobile p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.336) ;
+}
+
+#skills-stacks {
+    cursor: pointer;
+    margin: 5px auto;
+    width: 60px;
+    height: 60px;
+}
+
+.imgStack1, .imgStack2, .imgStack3, .imgStack4, .imgStack5, .imgStack6, .imgStack7, .imgStack8, .imgStack9, .imgStack10 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    opacity: 0;
+}
+
+.imgStack1 {
+    background-image: url("https://img.icons8.com/color/48/undefined/git.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack2 {
+    background-image: url("https://img.icons8.com/fluency/48/undefined/github.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack3 {
+    background-image: url("https://img.icons8.com/color/48/undefined/html-5--v1.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack4 {
+    background-image: url("https://img.icons8.com/color/48/undefined/css3.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack5 {
+    background-image: url("https://img.icons8.com/color/48/undefined/bootstrap.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack6 {
+    background-image: url("https://img.icons8.com/color/48/undefined/sass.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack7 {
+    background-image: url("./img/materialize.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack8 {
+    background-image: url("https://img.icons8.com/color/48/undefined/javascript--v1.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack9 {
+    background-image: url("./img/jquery2.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack10 {
+    background-image: url("https://img.icons8.com/color/48/undefined/figma--v1.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+
+@media (max-width: 1200px) {
+    #icones-stacks{display: none;}
+    #icones-stacks-mobile{display: block;}
+}
+/*Icones stacks*/
+
+
+
+/*Arrows carousel*/
 #arrow-left i {
     color: white;
     cursor: pointer;
@@ -250,16 +454,23 @@ header {
 .d-flex {
     display: block;
 }
+/**Arrows carousel/
 
+
+
+
+
+/*Config conteúdo central2 carousel*/
 #conteudo-central2 {
     padding: 30px;
     text-align: center;
-    width: 60%;
+    width: 70%;
     animation-name: fadeCarousel;
     animation-duration: 2s;
     animation-direction: normal;
     background-color: var(--corFundo);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 #conteudo-central2 h4 {
@@ -279,8 +490,8 @@ header {
     display: flex;
     justify-content: center;
     margin: 10px;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 #img-texto p {
@@ -296,17 +507,9 @@ header {
 #img-texto img {
     border-radius: 8px;
     box-shadow: 0px 0px 10px var(--corDetalhes);
-    animation-name: animaImg;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    width: 150px;
 }
 
-@keyframes animaImg {
-    0% {transform: rotate(0deg);}
-    50% {transform: rotate(2deg);}
-    100% {transform: rotate(0deg);}
-}
 
 #conteudo-central2 i {
     margin-right: 5px;
@@ -332,6 +535,32 @@ header {
     transition: all 300ms;
 }
 
+
+@media (max-width: 700px) {
+    #conteudo-central2 {padding: 10px;text-align: center;width: 95%;}
+    #conteudo-central2 h4 {font-size: 30px;width: 180px;}
+    #img-texto {flex-wrap: wrap;}
+    #img-texto img {margin-bottom: 10px; width: 90px;}
+    #img-texto p {width: 350px;font-size: 12px;margin-bottom: 5px;}
+    #conteudo-central2 a {padding: 5px;margin-top: 5px; font-size: 13px;}
+    #conteudo-central2 a:hover {padding: 10px;}
+}
+
+@media (max-width: 1200px) {
+    #conteudo-central2 {padding: 30px;text-align: center;width: 80%;}
+    #conteudo-central2 h4 {font-size: 35px;width: 210px;}
+    #img-texto {flex-wrap: wrap;}
+    #img-texto img {margin-bottom: 10px; width: 130px;}
+    #img-texto p {width: 340px;font-size: 14px;margin-bottom: 5px;}
+    #conteudo-central2 a {padding: 7px;margin-top: 5px; font-size: 15px;}
+    #conteudo-central2 a:hover {padding: 13px;}
+}
+/*Config conteúdo central2 carousel*/
+
+
+
+
+/*Footer*/
 footer {
     text-align: center;
     color: rgba(255, 255, 255, 0.363);
@@ -340,7 +569,7 @@ footer {
     margin: 0 auto;
     border-radius: 5px;
 }
-
+/*Footer*/
 
 
 
