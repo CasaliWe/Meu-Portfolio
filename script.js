@@ -4,7 +4,7 @@ setTimeout(() => {
 }, 1000);
 
 //Carousel
-document.getElementById('arrow').addEventListener('click', ()=>{
+document.getElementById('arrow-left').addEventListener('click', ()=>{
        var conteudo1 = document.getElementById('conteudo-central')
        var conteudo2 = document.getElementById('conteudo-central2')
        if(conteudo1.className == 'd-block'){
@@ -14,5 +14,17 @@ document.getElementById('arrow').addEventListener('click', ()=>{
           conteudo1.className = 'd-block'
           conteudo2.className = 'd-none'
        }
+})
+
+document.getElementById('arrow-right').addEventListener('click', ()=>{
+     var conteudo1 = document.getElementById('conteudo-central')
+     var conteudo2 = document.getElementById('conteudo-central2')
+     if(conteudo1.className == 'd-block'){
+        conteudo1.className = 'd-none'
+        conteudo2.className = 'd-block'
+     } else {
+        conteudo1.className = 'd-block'
+        conteudo2.className = 'd-none'
+     }
 })
 

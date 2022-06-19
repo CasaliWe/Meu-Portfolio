@@ -94,12 +94,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 80vh;
 }
 
 #conteudo-central {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     text-align: center;
+    width: 60%;
     animation-name: fadeCarousel;
     animation-duration: 2s;
     animation-direction: normal;
@@ -214,21 +215,32 @@ header {
     box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.541);
 }
 
-#arrow i {
+#arrow-left i {
     color: white;
     cursor: pointer;
     font-size: 35px;
-    animation-name: arrow;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    position: fixed;
+    margin-right: 10px;
 }
 
-@keyframes arrow {
-    0% {transform: scale(1.0); color: white;}
-    50% {transform: scale(1.1); color: rgba(255, 255, 255, 0.548);}
-    100% {transform: scale(1.0); color: white;}
+#arrow-left i:hover {
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#arrow-right i {
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+#arrow-right i:hover {
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .d-none {
@@ -240,35 +252,49 @@ header {
 }
 
 #conteudo-central2 {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
-    width: 55%;
+    width: 60%;
     animation-name: fadeCarousel;
     animation-duration: 2s;
     animation-direction: normal;
+    background-color: var(--corFundo);
+    border-radius: 10px;
 }
 
 #conteudo-central2 h4 {
-    font-size: 30px;
-    width: 300px;
+    font-size: 40px;
+    width: 350px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid rgba(255, 255, 255, 0.096);
-    animation-name: textoQuemSou;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-@keyframes textoQuemSou {
-    0% {color: white;}
-    50% {color: var(--corDetalhes);}
-    100% {color: white;}
+#img-texto {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-#conteudo-central2 img {
-    border-radius: 5px;
-    margin: 5px;
+#img-texto p {
+    width: 350px;
+    font-size: 16px;
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 20px;
+}
+
+#img-texto img {
+    border-radius: 8px;
     box-shadow: 0px 0px 10px var(--corDetalhes);
     animation-name: animaImg;
     animation-duration: 6s;
@@ -278,15 +304,8 @@ header {
 
 @keyframes animaImg {
     0% {transform: rotate(0deg);}
-    50% {transform: rotate(1deg);}
+    50% {transform: rotate(2deg);}
     100% {transform: rotate(0deg);}
-}
-
-#conteudo-central2 p {
-     width: 400px;
-     margin: 10px auto;
-     font-size: 16px;
-     padding-bottom: 15px;
 }
 
 #conteudo-central2 i {
@@ -310,8 +329,18 @@ header {
     text-decoration: none;
     color: var(--corDetalhes);
     border: 1px solid var(--corDetalhes);
-    transition: all 200ms;
+    transition: all 300ms;
 }
+
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.363);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.116);
+    width: 280px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
 
 
 
