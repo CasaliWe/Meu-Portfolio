@@ -1,3 +1,15 @@
+ //Animação trocar nome digitado
+ var textoDestaque = document.getElementById('texto-destaque')
+ setInterval(() => {
+      if(textoDestaque.textContent == 'Weslei') {
+          textoDestaque.textContent = 'Casali'
+      } else {
+          textoDestaque.textContent = 'Weslei'
+      }
+ }, 4000);
+
+
+ 
 //Inicialização fadeIn
 setTimeout(() => {
      document.getElementById('startFade').className = 'fadeIn'
@@ -71,14 +83,3 @@ var imgStacks = document.getElementById('skills-stacks')
  setInterval(() => {
      trocarImgStacks();
  }, 1500);
-
-
- //Animação trocar nome digitado
- var textoDestaque = document.getElementById('texto-destaque')
- setInterval(() => {
-      if(textoDestaque.textContent == 'Weslei') {
-          textoDestaque.textContent = 'Casali'
-      } else {
-          textoDestaque.textContent = 'Weslei'
-      }
- }, 4000);
