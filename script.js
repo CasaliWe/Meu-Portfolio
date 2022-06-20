@@ -154,4 +154,3 @@ spyClick3.addEventListener('click', ()=>{
      spyBlock2.className = 'd-none-spy'
      spyBlock3.className = 'd-block-spy'
 })
->>>>>>> testeCarousel
