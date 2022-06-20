@@ -20,26 +20,41 @@ setTimeout(() => {
 document.getElementById('arrow-left').addEventListener('click', ()=>{
        var conteudo1 = document.getElementById('conteudo-central')
        var conteudo2 = document.getElementById('conteudo-central2')
+       var conteudo3 = document.getElementById('conteudo-central3')
        if(conteudo1.className == 'd-block'){
           conteudo1.className = 'd-none'
-          conteudo2.className = 'd-block'
-       } else {
+          conteudo2.className = 'd-none'
+          conteudo3.className = 'd-block'
+       } else if(conteudo2.className == 'd-block') {
           conteudo1.className = 'd-block'
           conteudo2.className = 'd-none'
+          conteudo3.className = 'd-none'
+       } else {
+          conteudo1.className = 'd-none'
+          conteudo2.className = 'd-block'
+          conteudo3.className = 'd-none'
        }
 })
 
 document.getElementById('arrow-right').addEventListener('click', ()=>{
      var conteudo1 = document.getElementById('conteudo-central')
      var conteudo2 = document.getElementById('conteudo-central2')
+     var conteudo3 = document.getElementById('conteudo-central3')
      if(conteudo1.className == 'd-block'){
-        conteudo1.className = 'd-none'
-        conteudo2.className = 'd-block'
-     } else {
-        conteudo1.className = 'd-block'
-        conteudo2.className = 'd-none'
-     }
+          conteudo1.className = 'd-none'
+          conteudo2.className = 'd-block'
+          conteudo3.className = 'd-none'
+       } else if(conteudo2.className == 'd-block') {
+          conteudo1.className = 'd-none'
+          conteudo2.className = 'd-none'
+          conteudo3.className = 'd-block'
+       } else {
+          conteudo1.className = 'd-block'
+          conteudo2.className = 'd-none'
+          conteudo3.className = 'd-none'
+       }
 })
+
 
 
 //Abrir menu mobile
@@ -50,6 +65,7 @@ document.getElementById('button-toggler').addEventListener('click', ()=>{
 document.getElementById('close-mobile').addEventListener('click', ()=>{
      document.getElementById('nav-principal-mobile').style.cssText = `width: 0%;padding: 0; transition: all 1.5s;`
 })
+
 
 
 
@@ -82,4 +98,60 @@ var imgStacks = document.getElementById('skills-stacks')
 
  setInterval(() => {
      trocarImgStacks();
+<<<<<<< HEAD
  }, 1500);
+=======
+ }, 1500);
+
+
+ 
+
+ //Animação trocar nome digitado
+ var textoDestaque = document.getElementById('texto-destaque')
+ setInterval(() => {
+      if(textoDestaque.textContent == 'Weslei') {
+          textoDestaque.textContent = 'Casali'
+      } else {
+          textoDestaque.textContent = 'Weslei'
+      }
+ }, 4000);
+
+
+ 
+
+
+ //Scrollspy 
+ var spyClick1 = document.getElementById('spy-click1')
+ var spyClick2 = document.getElementById('spy-click2')
+ var spyClick3 = document.getElementById('spy-click3')
+ var spyBlock1 = document.getElementById('spy-block1')
+ var spyBlock2 = document.getElementById('spy-block2')
+ var spyBlock3 = document.getElementById('spy-block3')
+
+spyClick1.addEventListener('click', ()=>{
+     spyClick1.classList.add('active-scrollspy')
+     spyClick2.classList.remove('active-scrollspy')
+     spyClick3.classList.remove('active-scrollspy')
+     spyBlock1.className = 'd-block-spy'
+     spyBlock2.className = 'd-none-spy'
+     spyBlock3.className = 'd-none-spy'
+})
+
+spyClick2.addEventListener('click', ()=>{
+     spyClick1.classList.remove('active-scrollspy')
+     spyClick2.classList.add('active-scrollspy')
+     spyClick3.classList.remove('active-scrollspy')
+     spyBlock1.className = 'd-none-spy'
+     spyBlock2.className = 'd-block-spy'
+     spyBlock3.className = 'd-none-spy'
+})
+
+spyClick3.addEventListener('click', ()=>{
+     spyClick1.classList.remove('active-scrollspy')
+     spyClick2.classList.remove('active-scrollspy')
+     spyClick3.classList.add('active-scrollspy')
+     spyBlock1.className = 'd-none-spy'
+     spyBlock2.className = 'd-none-spy'
+     spyBlock3.className = 'd-block-spy'
+})
+>>>>>>> testeCarousel

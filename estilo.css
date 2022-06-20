@@ -567,6 +567,129 @@ header {
 
 
 
+
+
+/*Config conteúdo central3 carousel*/
+#conteudo-central3 {
+    padding: 20px;
+    width: 70%;
+    animation-name: fadeCarousel;
+    animation-duration: 2s;
+    animation-direction: normal;
+    background-color: var(--corFundo);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#conteudo-central3 h4 {
+    text-align: center;
+    font-size: 40px;
+    width: 350px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#scrollspy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#scrollspy-menu {
+      width: 20%;
+      margin: 3px 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(255, 255, 255, 0.096);
+      border-radius: 10px;
+}
+
+#scrollspy-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px auto;
+    text-align: center;
+    width: 75%;
+}
+
+#scrollspy-menu a:hover {
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#scrollspy-texto {
+      width: 80%;
+      margin: 3px 10px;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.096);
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+}    
+
+#scrollspy-texto div {
+    padding: 5px;
+    width: 90%;
+    animation-name: fadeCarousel;
+    animation-duration: 3s;
+    animation-direction: normal;
+}
+
+#scrollspy-texto h2 {
+    margin: 10px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+    border-radius: 10px;
+    width: 55%;
+}
+
+#scrollspy-texto p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.active-scrollspy {
+    border-bottom: 2px solid var(--corDetalhes);
+    border-radius: 7px;
+    animation-name: fadeCarousel;
+    animation-duration: 1s;
+    animation-direction: normal;
+}
+
+.d-none-spy {
+    display: none;
+}
+
+.d-block-spy {
+    display: block;
+}
+
+@media (max-width: 700px) {
+    #conteudo-central3 {width: 95%;}
+    #scrollspy {flex-direction: column;}
+}
+
+@media (max-width: 1200px) {
+    #conteudo-central3 {width: 80%;}
+    #scrollspy {flex-direction: column;}
+}
+/*Config conteúdo central3 carousel*/
+
+
+
+
+
+
 /*Footer*/
 footer {
     text-align: center;
