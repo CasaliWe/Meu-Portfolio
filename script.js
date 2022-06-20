@@ -97,10 +97,7 @@ var imgStacks = document.getElementById('skills-stacks')
  }
 
  setInterval(() => {
-     trocarImgStacks();
-<<<<<<< HEAD
- }, 1500);
-=======
+     trocarImgStacks();  
  }, 1500);
 
 
