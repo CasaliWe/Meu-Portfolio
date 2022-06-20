@@ -9,6 +9,18 @@
  }, 4000);
 
 
+
+
+ //Abrir menu mobile
+document.getElementById('button-toggler').addEventListener('click', ()=>{
+     document.getElementById('nav-principal-mobile').style.cssText = `width: 100%;padding: 30px 30px 10px 30px; transition: all 1.5s;`
+})
+
+document.getElementById('close-mobile').addEventListener('click', ()=>{
+     document.getElementById('nav-principal-mobile').style.cssText = `width: 0%;padding: 0; transition: all 1.5s;`
+})
+
+
  
 //Inicialização fadeIn
 setTimeout(() => {
@@ -56,20 +68,6 @@ document.getElementById('arrow-right').addEventListener('click', ()=>{
           conteudo3.className = 'd-none'
        }
 })
-
-
-
-
-
-//Abrir menu mobile
-document.getElementById('button-toggler').addEventListener('click', ()=>{
-     document.getElementById('nav-principal-mobile').style.cssText = `width: 100%;padding: 30px 30px 10px 30px; transition: all 1.5s;`
-})
-
-document.getElementById('close-mobile').addEventListener('click', ()=>{
-     document.getElementById('nav-principal-mobile').style.cssText = `width: 0%;padding: 0; transition: all 1.5s;`
-})
-
 
 
 
@@ -144,3 +142,27 @@ spyClick3.addEventListener('click', ()=>{
      spyBlock2.className = 'd-none-spy'
      spyBlock3.className = 'd-block-spy'
 })
+
+
+
+
+
+//Formulario btn 
+function contatoLinks(){
+     document.getElementById('contato-container-links').style.display = ''
+     document.getElementById('contato-container-form').style.display = 'none'
+     document.getElementById('btn-contato-links').remove()
+     document.getElementById('btn-contato-form').remove()
+}
+
+function contatoForm(){
+     document.getElementById('contato-container-form').style.display = ''
+     document.getElementById('contato-container-links').style.display = 'none'
+     document.getElementById('btn-contato-links').style.display = 'none'
+     document.getElementById('btn-contato-form').style.display = 'none'
+}
+
+function backForm(){
+     window.location.href = "contato.html"
+}
+

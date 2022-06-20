@@ -133,6 +133,7 @@ header {
       overflow: hidden;
       width: 0%;
       height: 100vh;
+      z-index: 1;
 }
 
 #nav-principal-mobile a {
@@ -708,3 +709,222 @@ footer {
 
 
 
+
+/*styles contato LINKS*/
+#volta-contato {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#sessao-contato {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato-container-links {
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--corFundo);
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    animation-name: fadeCarousel;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+
+
+#contato-container-links h1 {
+    font-size: 30px;
+    margin: 5px auto 20px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.116);
+    border-radius: 10px;
+    width: 60%;
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+#contato-container-links a {
+     border: 1px solid var(--corDetalhes);
+     color: var(--corDetalhes);
+     margin: 5px 20px;
+     border-radius: 8px;
+     padding: 10px;
+}
+
+#contato-container-links a:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+    box-shadow: 0px 0px 5px 2px var(--corDetalhes);
+    text-shadow: 0px 0px 3px var(--corDetalhes);
+}
+/*styles contato LINKS*/
+
+
+
+
+
+
+
+/*styles contato FORM*/
+#contato-container-form {
+    width: 500px;
+    text-align: center;
+    background-color: var(--corFundo);
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    animation-name: fadeCarousel;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+
+#contato-container-form h1 {
+    font-size: 25px;
+    margin: 5px auto 20px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.116);
+    border-radius: 10px;
+    width: 90%;
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#contato-container-form form {
+    margin: 40px;
+}
+
+
+.input-single {
+    margin: 20px 0;
+    position: relative;
+}
+
+.input-single label {
+    color: var(--corDetalhes);
+    font-size: 16px;
+    position:absolute ;
+    top: 0px;
+    left: 10px;
+    cursor: text;
+    transition: 0.8s ease-in-out;
+}
+
+.input {
+    width: 100%;
+    padding: 7px;
+    color: rgb(150, 150, 150);
+    border: 0;
+    border-bottom: 2px solid var(--corDetalhes);
+    outline: 0 ;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+
+.input:focus , .input:valid {
+    border-bottom: 2px solid var(--corDetalhes);
+}
+
+.input:focus ~ label , .input:valid ~ label {
+   transform: translateY(-18px);
+   font-size: 12px;
+   color:var(--corDetalhes) ;
+}
+
+#form-nomeEmail {
+    display: flex;
+}
+
+#form-nomeEmail div {
+    margin: 5px;
+}
+
+#form-nomeEmail2 {
+    display: flex;
+}
+
+#form-nomeEmail2 div {
+    margin: 30px 5px 20px 5px;
+}
+
+#form-enviar {
+    padding: 5px;
+    width: 40%;
+    font-size: 20px;
+    border: transparent;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#form-enviar:hover {
+    color: #3bd9d9;
+    border-bottom: 1px solid var(--corDetalhes);
+    box-shadow: 0px 0px 3px 1px var(--corDetalhes);
+}
+
+
+@media (max-width: 700px) {
+    #contato-container-form {width: 400px;padding: 15px;}
+    #contato-container-form h1 {font-size: 19px;width: 70%;}
+    #contato-container-form form {margin: 30px 15px;}
+}
+/*styles contato FORM*/
+
+
+
+
+
+
+/*BTN abrir links/form*/
+#btn-contato-links {
+      margin: 20px;
+      width: 300px;
+      font-size: 35px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid var(--corDetalhes);
+      background-color: transparent;
+      color: var(--corDetalhes);
+}
+
+#btn-contato-links:hover {
+    box-shadow: 0px 0px 4px 2px var(--corDetalhes);
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+#btn-contato-form {
+     margin: 20px;
+     width: 300px;
+     font-size: 35px;
+     padding: 10px;
+     border-radius: 10px;
+     border: 1px solid var(--corDetalhes);
+     background-color: transparent;
+     color: var(--corDetalhes);
+}
+
+#btn-contato-form:hover {
+    box-shadow: 0px 0px 4px 2px var(--corDetalhes);
+    background-color: rgba(0, 0, 0, 0.295);
+}
+/*BTN abrir links/form*/
