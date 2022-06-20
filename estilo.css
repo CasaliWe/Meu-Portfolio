@@ -288,10 +288,10 @@ header {
 }
 
 @media (max-width: 700px) {
-    #conteudo-central p {margin-bottom:5px;font-size: 16px;}
-    #conteudo-central h4 {margin-bottom:5px;font-size: 20px;}
-    #btn-git {margin: 5px;width: 80px; font-size: 10px;}
-    #btn-link {margin: 5px;width: 80px; font-size: 10px;}
+    #conteudo-central p {margin-bottom:5px;font-size: 18px;}
+    #conteudo-central h4 {margin-bottom:5px;font-size: 24px;}
+    #btn-git {margin: 5px;width: 100px; font-size: 13px;}
+    #btn-link {margin: 5px;width: 100px; font-size: 13px;}
     #conteudo-central {text-align: center;width: 100%;}
     #sessao1 {margin: 10px;}
 }
@@ -336,8 +336,8 @@ header {
 #skills-stacks {
     cursor: pointer;
     margin: 5px auto;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 
 .imgStack1, .imgStack2, .imgStack3, .imgStack4, .imgStack5, .imgStack6, .imgStack7, .imgStack8, .imgStack9, .imgStack10 {
@@ -546,11 +546,11 @@ header {
 
 @media (max-width: 700px) {
     #conteudo-central2 {text-align: center;width: 100%;}
-    #conteudo-central2 h4 {font-size: 25px;width: 180px;}
+    #conteudo-central2 h4 {font-size: 30px;width: 180px;}
     #img-texto {flex-wrap: wrap;}
-    #img-texto img {margin-bottom: 10px; width: 85px;}
-    #img-texto p {font-size: 14px;margin-bottom: 5px;}
-    #conteudo-central2 a {padding: 5px;margin-top: 5px; font-size: 13px;}
+    #img-texto img {margin-bottom: 10px; width: 90px;}
+    #img-texto p {font-size: 15px;margin-bottom: 5px;}
+    #conteudo-central2 a {padding: 8px;margin-top: 7px; font-size: 15px;}
     #conteudo-central2 a:hover {padding: 10px;}
 }
 /*Config conteúdo central2 carousel*/
