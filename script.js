@@ -16,6 +16,8 @@ setTimeout(() => {
 }, 1000);
 
 
+
+
 //Carousel
 document.getElementById('arrow-left').addEventListener('click', ()=>{
        var conteudo1 = document.getElementById('conteudo-central')
@@ -57,6 +59,8 @@ document.getElementById('arrow-right').addEventListener('click', ()=>{
 
 
 
+
+
 //Abrir menu mobile
 document.getElementById('button-toggler').addEventListener('click', ()=>{
      document.getElementById('nav-principal-mobile').style.cssText = `width: 100%;padding: 30px 30px 10px 30px; transition: all 1.5s;`
@@ -65,6 +69,7 @@ document.getElementById('button-toggler').addEventListener('click', ()=>{
 document.getElementById('close-mobile').addEventListener('click', ()=>{
      document.getElementById('nav-principal-mobile').style.cssText = `width: 0%;padding: 0; transition: all 1.5s;`
 })
+
 
 
 
@@ -101,20 +106,8 @@ var imgStacks = document.getElementById('skills-stacks')
  }, 1500);
 
 
- 
-
- //Animação trocar nome digitado
- var textoDestaque = document.getElementById('texto-destaque')
- setInterval(() => {
-      if(textoDestaque.textContent == 'Weslei') {
-          textoDestaque.textContent = 'Casali'
-      } else {
-          textoDestaque.textContent = 'Weslei'
-      }
- }, 4000);
 
 
- 
 
 
  //Scrollspy 

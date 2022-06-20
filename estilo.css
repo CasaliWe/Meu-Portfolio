@@ -453,7 +453,7 @@ header {
 .d-flex {
     display: block;
 }
-/**Arrows carousel/
+/*Arrows carousel*/
 
 
 
@@ -674,13 +674,13 @@ header {
     display: block;
 }
 
-@media (max-width: 700px) {
-    #conteudo-central3 {width: 95%;}
+@media (max-width: 1200px) {
+    #conteudo-central3 {width: 80%;}
     #scrollspy {flex-direction: column;}
 }
 
-@media (max-width: 1200px) {
-    #conteudo-central3 {width: 80%;}
+@media (max-width: 700px) {
+    #conteudo-central3 {width: 100%;}
     #scrollspy {flex-direction: column;}
 }
 /*Config conteúdo central3 carousel*/
