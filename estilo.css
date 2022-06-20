@@ -507,14 +507,6 @@ header {
     border-radius: 8px;
     box-shadow: 0px 0px 4px var(--corDetalhes);
     width: 160px;
-    opacity: .9;
-}
-
-#img-texto img:hover {
-    border-radius: 8px;
-    box-shadow: 0px 0px 7px var(--corDetalhes);
-    width: 160px;
-    opacity: 1;
 }
 
 
@@ -557,7 +549,6 @@ header {
     #conteudo-central2 h4 {font-size: 30px;width: 180px;}
     #img-texto {flex-wrap: wrap;}
     #img-texto img {margin-bottom: 10px; width: 110px;}
-    #img-texto img:hover {width: 130px;}
     #img-texto p {font-size: 15px;margin-bottom: 5px;}
     #conteudo-central2 a {padding: 8px;margin-top: 7px; font-size: 15px;}
     #conteudo-central2 a:hover {padding: 10px;}
@@ -676,15 +667,23 @@ header {
 
 @media (max-width: 1200px) {
     #conteudo-central3 {width: 80%;}
-    #scrollspy {flex-direction: column;}
+    #conteudo-central3 h4 {font-size: 30px; width: 300px;}
+    #scrollspy-menu a {font-size: 12px;}
+    #scrollspy-texto h2 {margin: 10px auto;width: 60%; font-size: 27px;}  
+    #scrollspy-texto p {width: 75%;font-size: 16px;}
 }
 
 @media (max-width: 700px) {
     #conteudo-central3 {width: 100%;}
     #scrollspy {flex-direction: column;}
+    #conteudo-central3 h4 {font-size: 25px; width: 250px;}
+    #scrollspy-menu {width: 90%;flex-direction: row; margin: 10px auto;}
+    #scrollspy-menu a {font-size: 12px; margin: 0 10px;}
+    #scrollspy-texto {width: 95%;padding: 5px;} 
+    #scrollspy-texto h2 {margin: 10px auto;width: 60%; font-size: 20px;}  
+    #scrollspy-texto p {width: 75%;font-size: 16px;}
 }
 /*Config conteúdo central3 carousel*/
-
 
 
 
