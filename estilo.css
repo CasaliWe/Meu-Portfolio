@@ -505,8 +505,16 @@ header {
 
 #img-texto img {
     border-radius: 8px;
-    box-shadow: 0px 0px 10px var(--corDetalhes);
-    width: 150px;
+    box-shadow: 0px 0px 3px var(--corDetalhes);
+    width: 160px;
+    opacity: .8;
+}
+
+#img-texto img:hover {
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px var(--corDetalhes);
+    width: 160px;
+    opacity: 1;
 }
 
 
