@@ -556,7 +556,8 @@ header {
     #conteudo-central2 {text-align: center;width: 100%;}
     #conteudo-central2 h4 {font-size: 30px;width: 180px;}
     #img-texto {flex-wrap: wrap;}
-    #img-texto img {margin-bottom: 10px; width: 90px;}
+    #img-texto img {margin-bottom: 10px; width: 110px;}
+    #img-texto img:hover {width: 130px;}
     #img-texto p {font-size: 15px;margin-bottom: 5px;}
     #conteudo-central2 a {padding: 8px;margin-top: 7px; font-size: 15px;}
     #conteudo-central2 a:hover {padding: 10px;}
