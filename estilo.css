@@ -926,9 +926,9 @@ header {
 
 
 @media (max-width: 700px) {
-    #contato-container-form {width: 400px;padding: 15px;}
+    #contato-container-form {width: 380px;padding: 15px;}
     #contato-container-form h1 {font-size: 19px;width: 70%;}
-    #contato-container-form form {margin: 30px 15px;}
+    #contato-container-form form {margin: 25px 10px;}
 }
 /*styles contato FORM*/
 
