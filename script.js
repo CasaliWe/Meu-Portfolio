@@ -5,14 +5,42 @@ setTimeout(() => {
 }, 1000);
  
 
+
  //Abrir menu mobile
+var linkMenu1 = document.getElementById('menu-mobile-a1')
+var linkMenu2 = document.getElementById('menu-mobile-a2')
+var linkMenu3 = document.getElementById('menu-mobile-a3')
+
+
 document.getElementById('button-toggler').addEventListener('click', ()=>{
-     document.getElementById('nav-principal-mobile').style.cssText = `width: 100%;padding: 30px 30px 10px 30px; transition: all 1.5s;`
+     document.getElementById('nav-principal-mobile').style.cssText = `width: 100%;padding: 30px 30px 10px 30px; transition: all 1s;`
+     setTimeout(() => {
+          linkMenu1.style.cssText = `opacity: 1;margin-right: 1%;transition: all 700ms`
+     }, 400);
+     setTimeout(() => {
+          linkMenu2.style.cssText = `opacity: 1;margin-right: 1%;transition: all 700ms`
+     }, 800);
+     setTimeout(() => {
+          linkMenu3.style.cssText = `opacity: 1;margin-right: 1%;transition: all 700ms`
+     }, 1200);
 })
 
 document.getElementById('close-mobile').addEventListener('click', ()=>{
-     document.getElementById('nav-principal-mobile').style.cssText = `width: 0%;padding: 0; transition: all 1.5s;`
+     setTimeout(() => {
+          linkMenu3.style.cssText = `opacity: 0;margin-right: 300px;transition: all 700ms`
+     }, 200);
+     setTimeout(() => {
+          linkMenu2.style.cssText = `opacity: 0;margin-right: 300px;transition: all 700ms`
+     }, 400);
+     setTimeout(() => {
+          linkMenu1.style.cssText = `opacity: 0;margin-right: 300px;transition: all 700ms`
+     }, 600);
+     setTimeout(() => {
+          document.getElementById('nav-principal-mobile').style.cssText = `width: 0%;padding: 0; transition: all 1s;`
+     }, 800);
+     
 })
+
  
  
  

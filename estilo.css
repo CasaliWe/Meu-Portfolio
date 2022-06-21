@@ -136,12 +136,17 @@ header {
       z-index: 1;
 }
 
-#nav-principal-mobile a {
+
+#menu-mobile-a1 ,#menu-mobile-a2, #menu-mobile-a3 {
     margin: 15px;
     text-decoration: none;
     font-size: 25px;
     color: white;
+    opacity: 0;
+    margin-right: 300px;
 }
+
+
 
 #nav-principal-mobile a:active {
     background-image: linear-gradient(to right, #3bd9d9, #b527cf);
@@ -158,7 +163,10 @@ header {
 }
 
 .active-mobile {
-    border-bottom: 2px solid var(--corDetalhes);
+    border-left: 3px solid var(--corDetalhes);
+    border-right: 3px solid var(--corDetalhes);
+    padding: 2px 5px;
+    border-radius: 5px;
 }
 
 @media (max-width: 1200px) {
