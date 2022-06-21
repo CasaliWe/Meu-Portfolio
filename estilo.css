@@ -657,6 +657,7 @@ header {
 .active-scrollspy {
     border-bottom: 2px solid var(--corDetalhes);
     border-radius: 7px;
+    padding: 3px;
     animation-name: fadeCarousel;
     animation-duration: 1s;
     animation-direction: normal;
@@ -683,7 +684,7 @@ header {
     #scrollspy {flex-direction: column;}
     #conteudo-central3 h4 {font-size: 25px; width: 250px;}
     #scrollspy-menu {width: 90%;flex-direction: row; margin: 10px auto;}
-    #scrollspy-menu a {font-size: 12px; margin: 0 10px;}
+    #scrollspy-menu a {font-size: 13px; margin: 0 10px;}
     #scrollspy-texto {width: 95%;padding: 5px;} 
     #scrollspy-texto h2 {margin: 10px auto;width: 60%; font-size: 20px;}  
     #scrollspy-texto p {width: 75%;font-size: 16px;}
@@ -694,24 +695,55 @@ header {
 
 
 
-/*Footer*/
-footer {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.363);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.116);
-    width: 280px;
-    border-radius: 5px;
-    margin: 0 auto;
+
+
+/*BTN abrir links/form*/
+#sessao-contato {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-/*Footer*/
 
 
+#btn-contato-links {
+    margin: 20px;
+    width: 300px;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--corDetalhes);
+    background-color: transparent;
+    color: var(--corDetalhes);
+    animation-name: btnContatos;
+    animation-duration: 2s;
+}
 
+#btn-contato-links:hover {
+  box-shadow: 0px 0px 4px 2px var(--corDetalhes);
+  background-color: rgba(0, 0, 0, 0.295);
+}
 
+#btn-contato-form {
+   margin: 20px;
+   width: 300px;
+   font-size: 35px;
+   padding: 10px;
+   border-radius: 10px;
+   border: 1px solid var(--corDetalhes);
+   background-color: transparent;
+   color: var(--corDetalhes);
+   animation-name: btnContatos2;
+   animation-duration: 2s;
+}
 
+#btn-contato-form:hover {
+  box-shadow: 0px 0px 4px 2px var(--corDetalhes);
+  background-color: rgba(0, 0, 0, 0.295);
+}
 
-/*styles contato LINKS*/
-#volta-contato {
+#volta-links, #volta-form {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -724,14 +756,24 @@ footer {
     cursor: pointer;
 }
 
-#sessao-contato {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@keyframes btnContatos {
+    from {opacity: 0; margin-left: 150px;}
+    to {opacity: 1; margin-left: none;}
 }
 
+@keyframes btnContatos2 {
+    from {opacity: 0; margin-right: 150px;}
+    to {opacity: 1; margin-right: none;}
+}
+/*BTN abrir links/form*/
+
+
+
+
+
+
+
+/*styles contato LINKS*/
 #contato-container-links {
     width: 350px;
     text-align: center;
@@ -895,36 +937,13 @@ footer {
 
 
 
-/*BTN abrir links/form*/
-#btn-contato-links {
-      margin: 20px;
-      width: 300px;
-      font-size: 35px;
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid var(--corDetalhes);
-      background-color: transparent;
-      color: var(--corDetalhes);
+/*Footer*/
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.363);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.116);
+    width: 280px;
+    border-radius: 5px;
+    margin: 0 auto;
 }
-
-#btn-contato-links:hover {
-    box-shadow: 0px 0px 4px 2px var(--corDetalhes);
-    background-color: rgba(0, 0, 0, 0.295);
-}
-
-#btn-contato-form {
-     margin: 20px;
-     width: 300px;
-     font-size: 35px;
-     padding: 10px;
-     border-radius: 10px;
-     border: 1px solid var(--corDetalhes);
-     background-color: transparent;
-     color: var(--corDetalhes);
-}
-
-#btn-contato-form:hover {
-    box-shadow: 0px 0px 4px 2px var(--corDetalhes);
-    background-color: rgba(0, 0, 0, 0.295);
-}
-/*BTN abrir links/form*/
+/*Footer*/
