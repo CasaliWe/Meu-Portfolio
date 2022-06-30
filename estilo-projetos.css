@@ -125,47 +125,63 @@
 /*------------------------------------------------------------------*/
 
 /*Titulo principal digitado da file projetos*/
-#titulo-digitado-projetos {
-    position: fixed;
-    top: 20%;
+#titulo-digitado-projetos{
+    position: absolute;
+    top: 140px;
     width: 100%;
 }
 
-#titulo-digitado-projetos div {
-       height: 350px;
-       width: 50%;
-       margin: 0 auto;
-       border-radius: 10px;
-       background-color: rgba(0, 0, 0, 0.404);
-       padding: 10px;
-       text-align: center;
+
+#conteudo-central-projetos {
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  animation-name: fadeCarousel;
+  animation-duration: 2s;
+  animation-direction: normal;
+  background-color: var(--corFundo);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-#titulo-digitado-projetos h2 {
-      width: 250px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.212);
-      border-radius: 10px;
-      margin: 5px auto 15px auto;
-      padding-bottom: 5px;
-      background-image: linear-gradient(to right, var(--cor2), var(--cor1));
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+#conteudo-central-projetos h5 {
+  font-size: 45px;
+  width: 350px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+  background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-#titulo-digitado-projetos h5 {
-        font-weight: 100;
-        width: 75%;
-        margin: 5px auto 15px auto;
-        padding: 10px;
-        font-size: 17px;
-        letter-spacing: 1px;
-        background-image: linear-gradient(to right, #3bd9d9, #b527cf);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+
+#texto-projetos {
+  font-size: 15px;
+  background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 10px auto;
+  width: 350px;
+  font-weight: 100;
 }
 
+
+@media (max-width: 1200px) {
+  #conteudo-central-projetos {padding: 20px;text-align: center;width: 50%;}
+  #conteudo-central-projetos h5 {font-size: 30px;width: 200px;}
+  #texto-projetos {width: 340px;font-size: 14px;margin-bottom: 5px;}
+}
+
+@media (max-width: 800px) {
+  #conteudo-central-projetos {text-align: center;width: 80%;}
+  #conteudo-central-projetos h5 {font-size: 30px;width: 180px;}
+  #texto-projetos {font-size: 13px;margin-bottom: 5px;width: 65%;}
+}
 
 
 
@@ -838,33 +854,20 @@
 
 
 /*------------------------------------------------------------------*/
-
-@media (max-width: 1200px) {
-  #titulo-digitado-projetos h5 {font-size: 15px;}
-}
-
 @media (max-width: 950px) {
-  #titulo-digitado-projetos div {height: 400px;}
-  #titulo-digitado-projetos h5 {font-size: 14px;}
   #terceiros-1,#terceiros-2,#jogos-1,#jogos-2,#jogos-3,#clones-1,#clones-2,#stacks-1,#stacks-2,#pessoais-1,#pessoais-2{flex-direction: column; height: auto; width: 70%;}
   #terceiros-1 span,#terceiros-2 span,#jogos-1 span,#jogos-2 span,#jogos-3 span,#clones-1 span,#clones-2 span,#stacks-1 span,#stacks-2 span,#pessoais-1 span,#pessoais-2 span{width: 100%; height: 50%; margin: 5px; padding: 7px;}
   .aba-projetos1{height: 100%;}
 }
 /*Menu Mobile*/
 @media (max-width: 800px) {
-  #titulo-digitado-projetos div {height: 410px;}
-  #titulo-digitado-projetos h5 {font-size: 16px;}
   .left1,.left2,.left3,.right1,.right2,.right3{display: none;}
   #abre-lateral{display: block;}
   #projetos {border: 1px solid transparent; width: 100%;}
-  #titulo-digitado-projetos div {width: 70%;}
 }
 
 @media (max-width: 600px) {
-  #titulo-digitado-projetos div {height: 420px;}
-  #titulo-digitado-projetos h5 {font-size: 11px;}
   .left1,.left2,.left3,.right1,.right2,.right3{display: none;}
   #projetos {border: 1px solid transparent; width: 100%;}
-  #titulo-digitado-projetos div {width: 65%;}
   #btn-link-github {font-size: 10px;}
 }
