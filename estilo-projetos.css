@@ -167,7 +167,7 @@
   color: transparent;
   margin: 10px auto;
   width: 350px;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 
@@ -180,7 +180,7 @@
 @media (max-width: 800px) {
   #conteudo-central-projetos {text-align: center;width: 80%;}
   #conteudo-central-projetos h5 {font-size: 30px;width: 180px;}
-  #texto-projetos {font-size: 14px;margin-bottom: 5px;width: 65%;}
+  #texto-projetos {font-size: 15px;margin-bottom: 5px;width: 65%;}
 }
 
 
