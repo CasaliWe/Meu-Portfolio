@@ -172,6 +172,7 @@ document.getElementById('abre-lateral').addEventListener('click', ()=>{
 //TERCEIROS
 document.querySelector('.left1-mobile').addEventListener('click',()=>{
      document.getElementById('projetos-mobile').style.cssText= `width:0%;transition: all 700ms;`
+     document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 0; transition: 500ms`
      setTimeout(() => {
          document.querySelector('.aba-projetos1').style.cssText = `width:90%; transition: all 700ms;`  
      }, 1000);
@@ -189,6 +190,7 @@ document.querySelector('.left1-mobile').addEventListener('click',()=>{
         document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
         setTimeout(() => {
          document.querySelector('.aba-projetos1').style.cssText = `width:0%; transition: all 500ms;`
+         document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 1; transition: 500ms`
         }, 1000);
      })
      
@@ -197,6 +199,7 @@ document.querySelector('.left1-mobile').addEventListener('click',()=>{
 //JOGOS
 document.querySelector('.left2-mobile').addEventListener('click',()=>{
    document.getElementById('projetos-mobile').style.cssText= `width:0%;transition: all 700ms;`
+   document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 0; transition: 500ms`
    setTimeout(() => {
        document.querySelector('.aba-projetos2').style.cssText = `width:90%; transition: all 700ms;`  
    }, 1000);
@@ -217,6 +220,7 @@ document.querySelector('.left2-mobile').addEventListener('click',()=>{
       document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
       setTimeout(() => {
        document.querySelector('.aba-projetos2').style.cssText = `width:0%; transition: all 500ms;`
+       document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 1; transition: 500ms`
       }, 1000);
    })
    
@@ -225,6 +229,7 @@ document.querySelector('.left2-mobile').addEventListener('click',()=>{
 //CLONES
 document.querySelector('.left3-mobile').addEventListener('click',()=>{
    document.getElementById('projetos-mobile').style.cssText= `width:0%;transition: all 700ms;`
+   document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 0; transition: 500ms`
    setTimeout(() => {
        document.querySelector('.aba-projetos3').style.cssText = `width:90%; transition: all 700ms;`  
    }, 1000);
@@ -242,6 +247,7 @@ document.querySelector('.left3-mobile').addEventListener('click',()=>{
       document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
       setTimeout(() => {
        document.querySelector('.aba-projetos3').style.cssText = `width:0%; transition: all 500ms;`
+       document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 1; transition: 500ms`
       }, 1000);
    })
    
@@ -250,6 +256,7 @@ document.querySelector('.left3-mobile').addEventListener('click',()=>{
 //CONSUMO DE APIS
 document.querySelector('.right1-mobile').addEventListener('click',()=>{
    document.getElementById('projetos-mobile').style.cssText= `width:0%;transition: all 700ms;`
+   document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 0; transition: 500ms`
    setTimeout(() => {
        document.querySelector('.aba-projetos4').style.cssText = `width:90%; transition: all 700ms;`  
    }, 1000);
@@ -260,6 +267,7 @@ document.querySelector('.right1-mobile').addEventListener('click',()=>{
       document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
       setTimeout(() => {
        document.querySelector('.aba-projetos4').style.cssText = `width:0%; transition: all 500ms;`
+       document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 1; transition: 500ms`
       }, 1000);
    })
    
@@ -268,6 +276,7 @@ document.querySelector('.right1-mobile').addEventListener('click',()=>{
 //STACKS
 document.querySelector('.right2-mobile').addEventListener('click',()=>{
    document.getElementById('projetos-mobile').style.cssText= `width:0%;transition: all 700ms;`
+   document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 0; transition: 500ms`
    setTimeout(() => {
        document.querySelector('.aba-projetos5').style.cssText = `width:90%; transition: all 700ms;`  
    }, 1000);
@@ -285,6 +294,7 @@ document.querySelector('.right2-mobile').addEventListener('click',()=>{
       document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
       setTimeout(() => {
        document.querySelector('.aba-projetos5').style.cssText = `width:0%; transition: all 500ms;`
+       document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 1; transition: 500ms`
       }, 1000);
    })
    
@@ -293,6 +303,7 @@ document.querySelector('.right2-mobile').addEventListener('click',()=>{
 //PESSOAIS
 document.querySelector('.right3-mobile').addEventListener('click',()=>{
    document.getElementById('projetos-mobile').style.cssText= `width:0%;transition: all 700ms;`
+   document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 0; transition: 500ms`
    setTimeout(() => {
        document.querySelector('.aba-projetos6').style.cssText = `width:90%; transition: all 700ms;`  
    }, 1000);
@@ -310,6 +321,7 @@ document.querySelector('.right3-mobile').addEventListener('click',()=>{
       document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
       setTimeout(() => {
        document.querySelector('.aba-projetos6').style.cssText = `width:0%; transition: all 500ms;`
+       document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 1; transition: 500ms`
       }, 1000);
    })
    
