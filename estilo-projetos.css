@@ -1,0 +1,870 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*----------------------------------------------------------*/
+:root {
+    --cor1: #3bd9d9;
+    --cor2: #b527cf;
+}
+
+
+
+
+/*Tela toda*/
+#container-projetos {
+    color: white;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*Contém os projetos / é oq mostra as bordas laterais*/
+#projetos {
+     width: 90%;
+     height: 100%;
+     border-left: 1px solid white;
+     border-right: 1px solid white;
+     position: relative;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+/*ESTILIZAÇÃO MENU LEFT*/
+.left1 {
+    position: absolute;
+    left: -3px;
+    top: 30%;
+    padding: 10px;
+    z-index: 2;
+    border-left:5px solid var(--cor1);
+    font-size: 20px;
+}
+
+.left2 {
+    position: absolute;
+    left: -3px;
+    top: 50%;
+    padding: 10px;
+    z-index: 2;
+    border-left:5px solid var(--cor1);
+    font-size: 20px;
+}
+
+.left3 {
+    position: absolute;
+    left: -3px;
+    top: 70%;
+    padding: 10px;
+    z-index: 2;
+    border-left:5px solid var(--cor1);
+    font-size: 20px;
+}
+
+.left1:hover, .left2:hover, .left3:hover {
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------*/
+
+
+/*ESTILIZAÇÃO MENU RIGHT*/
+.right1 {
+    position: absolute;
+    right: -3px;
+    top: 30%;
+    padding: 10px;
+    z-index: 2;
+    border-right:5px solid var(--cor1);
+    font-size: 20px;
+}
+
+.right2 {
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    padding: 10px;
+    z-index: 2;
+    border-right:5px solid var(--cor1);
+    font-size: 20px;
+}
+
+.right3 {
+    position: absolute;
+    right: -3px;
+    top: 70%;
+    padding: 10px;
+    z-index: 2;
+    border-right:5px solid var(--cor1);
+    font-size: 20px;
+}
+
+.right1:hover, .right2:hover, .right3:hover {
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+/*Titulo principal digitado da file projetos*/
+#titulo-digitado-projetos {
+    position: fixed;
+    top: 20%;
+    width: 100%;
+}
+
+#titulo-digitado-projetos div {
+       height: 350px;
+       width: 50%;
+       margin: 0 auto;
+       border-radius: 10px;
+       background-color: rgba(0, 0, 0, 0.404);
+       padding: 10px;
+       text-align: center;
+}
+
+#titulo-digitado-projetos h2 {
+      width: 250px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.212);
+      border-radius: 10px;
+      margin: 5px auto 15px auto;
+      padding-bottom: 5px;
+      background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+}
+
+#titulo-digitado-projetos h5 {
+        font-weight: 100;
+        width: 75%;
+        margin: 5px auto 15px auto;
+        padding: 10px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+}
+
+
+
+
+/*Botões que estão em todas as descrições dos prjetos*/
+#btn-link-github {
+      padding: 5px;
+      border: 2px solid var(--cor2);
+      background-color: var(--cor2);
+      color: white;
+      border-radius: 5px;
+}
+
+#btn-link-github:hover {
+    border: 1px solid var(--cor2);
+    color: var(--cor2);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 500ms;
+}
+/*------------------------------------------------------------------*/
+
+
+
+/*Div que contém o conteúdo dos projetos, width inical 0%*/
+.aba-projetos1, .aba-projetos2, .aba-projetos3, .aba-projetos4, .aba-projetos5, .aba-projetos6 {
+    position: fixed;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.767);
+    width: 0%;
+    height: 100vh;
+    top: 0px;
+    overflow-y: auto;
+    padding-top: 100px;
+}
+
+
+
+
+
+/*CLOSE ABA PRAJETOS BTN DO TOPO*/
+#close-projetos1, #close-projetos2, #close-projetos3, #close-projetos4, #close-projetos5, #close-projetos6 {
+     position: absolute;
+     top: 30px;
+     border: 1px solid transparent;
+     background-color: transparent;
+     font-size: 25px;
+     color: white;
+     width: 100%;
+     text-align: center;
+}
+
+#close-projetos1:hover, #close-projetos2:hover, #close-projetos3:hover, #close-projetos4:hover, #close-projetos5:hover, #close-projetos6:hover {
+    color: var(--cor1);
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+/*Todos os titulos das abas projetos*/
+#container-projetos h3 {
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container-projetos h4 {
+     font-size: 18px;
+     margin-bottom: 10px;
+}
+
+#container-projetos p {
+     font-size: 10px;
+     margin-bottom: 8px;
+}
+
+
+/*--------------------------------------------------------------*/
+
+
+/*ABA TERCEIROS 1*/
+#terceiros-1 {
+      padding: 10px;
+      width: 50%;
+      height: 200px;
+      margin: 10px auto;
+      display: flex;
+      justify-content: space-evenly;
+      opacity: 0;
+}
+
+#terceiros-1 span {
+     width: 45%;
+     background-color: rgba(255, 255, 255, 0.116);
+     text-align: center;
+     padding: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     transition: all 500ms;
+     border: 2px solid var(--cor1);
+}
+
+#terceiros-1 span:nth-child(1):hover {
+    transform: skewY(-5deg);
+    transform: rotate(-1deg);
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+    background-color: var(--cor1);
+    color: black;
+    transition: all 500ms;
+}
+
+#terceiros-1 span:nth-child(2):hover {
+    transform: skewY(3deg);
+    transform: rotate(1deg);
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+    background-color: var(--cor1);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+
+
+
+/*ABA TERCEIROS 2*/
+#terceiros-2 {
+      padding: 10px;
+      width: 50%;
+      height: 200px;
+      margin: 0px auto 20px auto;
+      display: flex;
+      justify-content: space-evenly;
+      opacity: 0;
+}
+
+#terceiros-2 span {
+     width: 45%;
+     background-color: rgba(255, 255, 255, 0.192);
+     text-align: center;
+     padding: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     border: 2px solid var(--cor1);
+}
+
+#terceiros-2 span:nth-child(1):hover {
+    transform: skewY(-3deg);
+    transform: rotate(-1deg);
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+    background-color: var(--cor1);
+    color: black;
+    transition: all 500ms;
+}
+
+#terceiros-2 span:nth-child(2):hover {
+    transform: skewY(3deg);
+    transform: rotate(1deg);
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+    background-color: var(--cor1);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+
+/*---------------------------------------------------------*/
+
+
+
+/*ABA JOGOS 1*/
+#jogos-1 {
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+#jogos-1 span {
+   width: 45%;
+   background-color: rgba(255, 255, 255, 0.116);
+   text-align: center;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   transition: all 500ms;
+   border: 2px solid var(--cor1);
+}
+
+#jogos-1 span:nth-child(1):hover {
+  transform: skewY(-5deg);
+  transform: rotate(-1deg);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  color: black;
+  transition: all 500ms;
+}
+
+#jogos-1 span:nth-child(2):hover {
+  transform: skewY(3deg);
+  transform: rotate(1deg);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+
+
+
+/*ABA JOGOS 2*/
+#jogos-2 {
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+#jogos-2 span {
+   width: 45%;
+   background-color: rgba(255, 255, 255, 0.192);
+   text-align: center;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   border: 2px solid var(--cor1);
+}
+
+#jogos-2 span:nth-child(1):hover {
+  transform: skewY(-3deg);
+  transform: rotate(-1deg);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  color: black;
+  transition: all 500ms;
+}
+
+#jogos-2 span:nth-child(2):hover {
+  transform: skewY(3deg);
+  transform: rotate(1deg);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+
+
+/*ABA JOGOS 3*/
+#jogos-3 {
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+#jogos-3 span {
+   width: 45%;
+   background-color: rgba(255, 255, 255, 0.192);
+   text-align: center;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   border: 2px solid var(--cor1);
+}
+
+#jogos-3 span:nth-child(1):hover {
+  transform: skewY(-3deg);
+  transform: rotate(-1deg);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  color: black;
+  transition: all 500ms;
+}
+
+#jogos-3 span:nth-child(2):hover {
+  transform: skewY(3deg);
+  transform: rotate(1deg);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+
+/*ABA CLONES 1*/
+#clones-1 {
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+#clones-1 span {
+   width: 45%;
+   background-color: rgba(255, 255, 255, 0.116);
+   text-align: center;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   transition: all 500ms;
+   border: 2px solid var(--cor1);
+}
+
+#clones-1 span:nth-child(1):hover {
+  transform: skewY(-5deg);
+  transform: rotate(-1deg);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  color: black;
+  transition: all 500ms;
+}
+
+#clones-1 span:nth-child(2):hover {
+  transform: skewY(3deg);
+  transform: rotate(1deg);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+
+
+
+/*ABA CLONES 2*/
+#clones-2 {
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+#clones-2 span {
+   width: 45%;
+   background-color: rgba(255, 255, 255, 0.192);
+   text-align: center;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   border: 2px solid var(--cor1);
+}
+
+#clones-2 span:nth-child(1):hover {
+  transform: skewY(-3deg);
+  transform: rotate(-1deg);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  color: black;
+  transition: all 500ms;
+}
+
+#clones-2 span:nth-child(2):hover {
+  transform: skewY(3deg);
+  transform: rotate(1deg);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+
+/*--------------------------------------------------------------*/
+
+
+/*ABA STRACKS 1*/
+#stacks-1 {
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+#stacks-1 span {
+   width: 45%;
+   background-color: rgba(255, 255, 255, 0.116);
+   text-align: center;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   transition: all 500ms;
+   border: 2px solid var(--cor1);
+}
+
+#stacks-1 span:nth-child(1):hover {
+  transform: skewY(-5deg);
+  transform: rotate(-1deg);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  color: black;
+  transition: all 500ms;
+}
+
+#stacks-1 span:nth-child(2):hover {
+  transform: skewY(3deg);
+  transform: rotate(1deg);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+
+
+
+/*ABA STACKS 2*/
+#stacks-2 {
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+#stacks-2 span {
+   width: 45%;
+   background-color: rgba(255, 255, 255, 0.192);
+   text-align: center;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   border: 2px solid var(--cor1);
+}
+
+#stacks-2 span:nth-child(1):hover {
+  transform: skewY(-3deg);
+  transform: rotate(-1deg);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  color: black;
+  transition: all 500ms;
+}
+
+#stacks-2 span:nth-child(2):hover {
+  transform: skewY(3deg);
+  transform: rotate(1deg);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+/*--------------------------------------------------------------------*/
+
+
+/*ABA PESSOAIS 1*/
+#pessoais-1 {
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+#pessoais-1 span {
+   width: 45%;
+   background-color: rgba(255, 255, 255, 0.116);
+   text-align: center;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   transition: all 500ms;
+   border: 2px solid var(--cor1);
+}
+
+#pessoais-1 span:nth-child(1):hover {
+  transform: skewY(-5deg);
+  transform: rotate(-1deg);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  color: black;
+  transition: all 500ms;
+}
+
+#pessoais-1 span:nth-child(2):hover {
+  transform: skewY(3deg);
+  transform: rotate(1deg);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+
+
+
+/*ABA PESSOAIS 2*/
+#pessoais-2 {
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+}
+
+#pessoais-2 span {
+   width: 45%;
+   background-color: rgba(255, 255, 255, 0.192);
+   text-align: center;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   border: 2px solid var(--cor1);
+}
+
+#pessoais-2 span:nth-child(1):hover {
+  transform: skewY(-3deg);
+  transform: rotate(-1deg);
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  color: black;
+  transition: all 500ms;
+}
+
+#pessoais-2 span:nth-child(2):hover {
+  transform: skewY(3deg);
+  transform: rotate(1deg);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+  background-color: var(--cor1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*Nav lateral mobile*/
+#projetos-mobile {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.836);
+    overflow: hidden;
+    width: 0%;
+}
+
+.left1-mobile {
+  position: absolute;
+  top: 20%;
+  left: 20px;
+  padding: 10px;
+  border-left: 3px solid var(--cor1);
+}
+
+.left2-mobile {
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  padding: 10px;
+  border-left: 3px solid var(--cor1);
+}
+
+.left3-mobile {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  padding: 10px;
+  border-left: 3px solid var(--cor1);
+}
+
+.right1-mobile {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  padding: 10px;
+  border-left: 3px solid var(--cor1);
+}
+
+.right2-mobile {
+  position: absolute;
+  top: 60%;
+  left: 20px;
+  padding: 10px;
+  border-left: 3px solid var(--cor1);
+}
+
+.right3-mobile {
+  position: absolute;
+  top: 70%;
+  left: 20px;
+  padding: 10px;
+  border-left: 3px solid var(--cor1);
+}
+
+.left1-mobile:hover,.left2-mobile:hover,.left3-mobile:hover,.right1-mobile:hover,.right2-mobile:hover,.right3-mobile:hover{
+     cursor: pointer;
+     background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+     background-clip: text;
+     -webkit-background-clip: text;
+     color: transparent;
+}
+
+#fecha-lateral {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.671);
+}
+#fecha-lateral:hover {
+     color: var(--cor1);
+     cursor: pointer;
+}
+
+#abre-lateral{
+     display: none;
+     position: absolute;
+     left: 30px;
+     top: 80px;
+     font-size: 25px;
+     transform: rotate(-90deg);
+}
+#abre-lateral:hover{
+    color: var(--cor1);
+    cursor: pointer;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+  #titulo-digitado-projetos h5 {font-size: 15px;}
+}
+
+@media (max-width: 950px) {
+  #titulo-digitado-projetos div {height: 400px;}
+  #titulo-digitado-projetos h5 {font-size: 14px;}
+  #terceiros-1,#terceiros-2,#jogos-1,#jogos-2,#jogos-3,#clones-1,#clones-2,#stacks-1,#stacks-2,#pessoais-1,#pessoais-2{flex-direction: column; height: auto; width: 70%;}
+  #terceiros-1 span,#terceiros-2 span,#jogos-1 span,#jogos-2 span,#jogos-3 span,#clones-1 span,#clones-2 span,#stacks-1 span,#stacks-2 span,#pessoais-1 span,#pessoais-2 span{width: 100%; height: 50%; margin: 5px; padding: 7px;}
+  .aba-projetos1{height: 100%;}
+}
+/*Menu Mobile*/
+@media (max-width: 800px) {
+  #titulo-digitado-projetos div {height: 410px;}
+  #titulo-digitado-projetos h5 {font-size: 16px;}
+  .left1,.left2,.left3,.right1,.right2,.right3{display: none;}
+  #abre-lateral{display: block;}
+  #projetos {border: 1px solid transparent; width: 100%;}
+  #titulo-digitado-projetos div {width: 70%;}
+}
+
+@media (max-width: 600px) {
+  #titulo-digitado-projetos div {height: 420px;}
+  #titulo-digitado-projetos h5 {font-size: 11px;}
+  .left1,.left2,.left3,.right1,.right2,.right3{display: none;}
+  #projetos {border: 1px solid transparent; width: 100%;}
+  #titulo-digitado-projetos div {width: 65%;}
+  #btn-link-github {font-size: 10px;}
+}

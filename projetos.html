@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--Estilo css-->
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo-projetos.css">
+    
+    <title>Weslei Casali</title>
+</head>
+<body onload="funcProjetos()"> 
+
+  <div id="container">
+
+      <div class="fadeout" id="startFade">
+        <header>
+             <h2>PORT<span id="head-title">FÓLIO</span></h2>
+             <nav id="nav-principal">
+                <a href="index.html">HOME</a>
+                <a href="projetos.html"  class="active">PROJETOS</a>
+                <a href="contato.html">CONTATO</a>
+             </nav>
+
+             <label for="checkbox" class="toggler" id="button-toggler">
+                 <input type="checkbox" name="" id="checkbox">
+                 <span class="line line--top"></span>
+                 <span class="line line--middle"></span>
+                 <span class="line line--bottom"></span>
+             </label>
+
+             <nav id="nav-principal-mobile">
+                 <a href="index.html" id="menu-mobile-a1">HOME</a>
+                 <a href="projetos.html" class="active-mobile" id="menu-mobile-a2">PROJETOS</a>
+                 <a href="contato.html" id="menu-mobile-a3">CONTATO</a>
+                 <i class="fas fa-times" id="close-mobile"></i>
+             </nav>
+
+        </header>
+        
+
+        
+
+        <div id="container-projetos"><!--Container que abrange tudo-->
+            
+            <div id="projetos"><!--menu lateral desktop-->
+                  <div class="left1">Terceiros</div>
+                  <div class="left2">Jogos</div>
+                  <div class="left3">Clones</div>
+                  <div class="right1">Consumo de Apis</div>
+                  <div class="right2">Stacks</div>
+                  <div class="right3">Pessoais</div>
+            </div><!--menu lateral desktop-->
+
+            <div id="projetos-mobile"><!--menu Mobile-->
+                <div class="left1-mobile">Terceiros</div>
+                <div class="left2-mobile">Jogos</div>
+                <div class="left3-mobile">Clones</div>
+                <div class="right1-mobile">Consumo de Apis</div>
+                <div class="right2-mobile">Stacks</div>
+                <div class="right3-mobile">Pessoais</div>
+                <span id="fecha-lateral">X</span>
+            </div><!--menu Mobile-->
+
+            <i class="fas fa-chevron-circle-down" id="abre-lateral"></i>
+
+
+
+
+            <div id="titulo-digitado-projetos"><!--TITULO CENTRAL PROJETOS-->
+                   <div>
+                         <h2>PROJETOS</h2>
+                         <h5>Aqui você encontrará alguns de meus projetos. <br> Ao longo desse 1 ano que estudo programação desenvolvi vários projetos, entre eles, projetos pessoais, acadêmicos, jogos e projetos para terceiros, adquirindo conhecimento em cada um deles, fazendo com que ao decorrer dos projetos eu conseguisse entender melhor como funcionada cada tecnologia! <br> Você pode conferir os projetos clicando nos itens laterais; <br> Em cada projeto possue o link para acessá-lo e também o link para o repositório GitHub do mesmo.</h5>
+                   </div>
+            </div><!--TITULO CENTRAL PROJETOS-->
+             
+
+
+
+             <!--ABA PROJETOS-->
+            <div class="aba-projetos1">
+                 <h3>TERCEIROS</h3>
+                 <button id="close-projetos1">X</button>
+                 <div id="terceiros-1">
+                     <span>
+                         <h4>Portfólio</h4>
+                         <p>Portfólio pessoal de Emanuela da Rosa;</p>
+                         <p>Stacks usadas: Html, Css, Bootstrap, Javascript;</p>
+                         <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                         <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/Emanuela-portfolio'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                     </span>
+                     <span onclick="window.location.href='https://portfolioemanuela.netlify.app'"><img src="./img/emanuela.gif" alt="" style="width: 100%;"></span>
+                 </div>
+                 <div id="terceiros-2">
+                     <span>
+                         <h4>Site</h4>
+                         <p>Site para funilaria Ribeiro</p>
+                         <p>Stacks usadas: Html, Css, Bootstrap, Javascript;</p>
+                         <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                         <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/Funilaria'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                     </span>
+                     <span  onclick="window.location.href='https://funilariaribeiro.site/'"><img src="./img/funilaria.gif" alt="" style="width: 100%;"></span>
+                 </div>
+            </div>
+
+
+
+            <div class="aba-projetos2">
+                <h3>JOGOS</h3>
+                <button id="close-projetos2">X</button>
+                <div id="jogos-1">
+                    <span>
+                        <h4>Pula Míssil GAME</h4>
+                        <p>Jogo criado para desenvolver habilidades em JS;</p>
+                        <p>Jogo com efeitos sonoros;</p>
+                        <p>Stacks usadas: Html, Css, Javascript;</p>
+                        <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                        <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/PULA-MISSIL-GAME'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                    </span>
+                    <span onclick="window.location.href='https://casaligamemissil.netlify.app/'"><img src="./img/missil.gif" alt="" style="width: 100%;"></span>
+                </div>
+                <div id="jogos-2">
+                    <span>
+                        <h4>Mate me GAME</h4>
+                        <p>Jogo clone, com algumas adaptações da minha parte</p>
+                        <p>Jogo com efeitos sonoros;</p>
+                        <p>Stacks usadas: Html, Css, Javascript;</p>
+                        <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                        <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/Mata-Mosquito-Game'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                    </span>
+                    <span  onclick="window.location.href='https://casaligamemateme.netlify.app/'"><img src="./img/mosca.gif" alt="" style="width: 100%;"></span>
+                </div>
+                <div id="jogos-3">
+                    <span>
+                        <h4>Mata Político GAME</h4>
+                        <p>Jogo criado como uma nova versão do jogo acima;</p>
+                        <p>Jogo com efeitos sonoros;</p>
+                        <p>Stacks usadas: Html, Css, Javascript;</p>
+                        <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                        <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/Salva-Planeta-GAME'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                    </span>
+                    <span  onclick="window.location.href='https://casaligamepolitico.netlify.app/'"><img src="./img/politico.gif" alt="" style="width: 100%;"></span>
+                </div>
+            </div>
+
+
+
+
+            <div class="aba-projetos3">
+                <h3>CLONES</h3>
+                <button id="close-projetos3">X</button>
+                <div id="clones-1">
+                    <span>
+                        <h4>Guns N' Roses Site</h4>
+                        <p>Clone feito do site da banda Guns N' Roses;</p>
+                        <p>Stacks usadas: Html, Css;</p>
+                        <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                        <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/Clone-site-Guns-N-Roses'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                    </span>
+                    <span onclick="window.location.href='https://casalicloneguns.netlify.app/'"><img src="./img/guns.gif" alt="" style="width: 100%;"></span>
+                </div>
+                <div id="clones-2">
+                    <span>
+                        <h4>Spotify Site</h4>
+                        <p>Clone do site do Spotify feito no curso acadêmico;</p>
+                        <p>Stacks usadas: Html, Css, Bootstrap;</p>
+                        <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                        <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/Projeto-Spotify'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                    </span>
+                    <span  onclick="window.location.href='https://casalispotify.netlify.app/'"><img src="./img/spotify.gif" alt="" style="width: 100%;"></span>
+                </div>
+            </div>
+
+
+
+
+            <div class="aba-projetos4">
+                <h3>CONSUMO DE APIS</h3>
+                <button id="close-projetos4">X</button>
+            </div>
+
+
+
+
+            <div class="aba-projetos5">
+                <h3>STACKS</h3>
+                <button id="close-projetos5">X</button>
+                <div id="stacks-1">
+                    <span>
+                        <h4>Doctor Strange</h4>
+                        <p>SASS</p>
+                        <p>Landing page feita com SASS para desenvolver entendimentos na tecnologia;</p>
+                        <p>Stacks usadas: Html, SASS;</p>
+                        <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                        <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/Dr-Estrando'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                    </span>
+                    <span onclick="window.location.href='https://casalicloneestranho.netlify.app/'"><img src="./img/estranho.gif" alt="" style="width: 100%;"></span>
+                </div>
+                <div id="stacks-2">
+                    <span>
+                        <h4>Finans App</h4>
+                        <p>BOOTSTRAP</p>
+                        <p>Site fictício criado com Bootstrap</p>
+                        <p>Stacks usadas: Html, Bootstrap;</p>
+                        <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                        <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/Projeto-Finans-BOOTSTRAP'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                    </span>
+                    <span  onclick="window.location.href='https://casalifinans.netlify.app/'"><img src="./img/finans.gif" alt="" style="width: 100%;"></span>
+                </div>
+            </div>
+
+
+
+
+            <div class="aba-projetos6">
+                <h3>PESSOAIS</h3>
+                <button id="close-projetos6">X</button>
+                <div id="pessoais-1">
+                    <span>
+                        <h4>Calculadora</h4>
+                        <p>App básico para práticar os conhecimentos em JS;</p>
+                        <p>Stacks usadas: Html, Css, Javascript;</p>
+                        <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                        <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/Calculadora'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                    </span>
+                    <span onclick="window.location.href='https://calculadoracasali.netlify.app/'"><img src="./img/calculadora.gif" alt="" style="width: 100%;"></span>
+                </div>
+                <div id="pessoais-2">
+                    <span>
+                        <h4>Calculador de IMC</h4>
+                        <p>Minha primeira aplicação feita com JS;</p>
+                        <p>Stacks usadas: Html, Css, Javascript;</p>
+                        <p>Clique no gif ao lado para ver <i class="fas fa-arrow-right"></i></p>
+                        <button id="btn-link-github" onclick="window.location.href='https://github.com/CasaliWe/IMC-Calculador'">Repositório GitHub! <i class="fab fa-github"></i></button>
+                    </span>
+                    <span  onclick="window.location.href='https://imcteste.netlify.app/'"><img src="./img/imc.gif" alt="" style="width: 100%;"></span>
+                </div>
+            </div>
+            <!--ABA PROJETOS-->
+
+            
+        </div><!--Container que abrange tudo-->
+
+
+          
+
+
+
+
+
+
+
+
+
+   
+        <footer><cite>Copyright &copy; 2022 Weslei Casali</cite></footer>
+
+      </div>
+
+
+  </div>
+
+     
+         
+
+
+
+
+
+<script src="script.js"></script> 
+<script src="script-projetos.js"></script>
+</body>
+</html>
