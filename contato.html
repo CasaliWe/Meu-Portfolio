@@ -45,11 +45,11 @@
                 <h1>Links úteis!</h1>
                 <i class="fas fa-backward" id="volta-links"></i>
 
-                <a> <i class="fab fa-instagram"></i> Instagram</a>
-                <a> <i class="fab fa-whatsapp"></i> Whatsapp</a>
-                <a> <i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a> <i class="fab fa-github"></i> GitHub</a>
-                <a> <i class="fas fa-at"></i> Email</a>
+                <a href="https://www.instagram.com/we_casali/"> <i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://api.whatsapp.com/send?phone=5554991538488&text=Preciso%20de%20um%20Dev!"> <i class="fab fa-whatsapp"></i> Whatsapp</a>
+                <a href="https://www.linkedin.com/in/weslei-casali-575826237/"> <i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/CasaliWe"> <i class="fab fa-github"></i> GitHub</a>
+                <a href=" mailto:wesleicasali18@gmail.com"> <i class="fas fa-at"></i> Email</a>
              </div>
 
 
@@ -59,10 +59,13 @@
                  <h1>Formulário para contato!</h1>
                  <i class="fas fa-backward" id="volta-form"></i>
 
-                 <form action="">
+                 <form action="https://api.staticforms.xyz/submit" method="post">
+                    
+                    <input type="hidden" name="accessKey" value="07769a72-e03c-44cc-92b1-f4dda4723410">
+
                     <div id="form-nomeEmail">
                         <div class="input-single">
-                            <input required type="text" name="nome" id="nome" class="input">
+                            <input required type="text" name="name" id="nome" class="input">
                             <label for="nome">Nome</label>
                         </div>
                         <div class="input-single">
@@ -73,23 +76,26 @@
                     
                     <div id="form-nomeEmail2">
                         <div class="input-single" style="width: 35%;">
-                            <input required type="tel" name="Telefone" id="Telefone" class="input">
+                            <input required type="tel" name="phone" id="Telefone" class="input">
                             <label for="Telefone">Telefone</label>
                         </div>
                         <div class="input-single" style="width: 65%;">
-                            <input required type="text" name="assunto" id="assunto" class="input">
+                            <input required type="text" name="subject" id="assunto" class="input">
                             <label for="assunto">Assunto</label>
                         </div>
                     </div>
 
                     <div>
                         <div class="input-single">
-                            <textarea id="mensagem" rows="3" class="input"></textarea>
+                            <textarea id="mensagem" rows="3" class="input" name="message"></textarea>
                             <label for="mensagem">Mensagem</label>
                         </div>
                     </div>
 
                     <button id="form-enviar">Enviar</button>
+                      
+                    <input type="hidden" name="redirectTo" value="https://casaliportfolio.netlify.app/">
+
                 </form>
              </div>
             
