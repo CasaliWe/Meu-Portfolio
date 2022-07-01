@@ -89,11 +89,19 @@ document.querySelector('.right1').addEventListener('click', ()=>{
    document.querySelector('.aba-projetos4').style.cssText = `width:90%; transition: all 700ms;`
    document.querySelector('.right1').style.cssText = `border-right:5px solid var(--cor2); transition: all 800ms`
    document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 0; transition: 500ms`
+   setTimeout(() => {
+      document.getElementById('apis-1').style.cssText = `opacity:1; transition: 800ms`
+   }, 800);
+
+
    //Fechar
    document.getElementById('close-projetos4').addEventListener('click', ()=>{
-       document.querySelector('.aba-projetos4').style.cssText = `width:00%; transition: all 500ms;`
-       document.querySelector('.right1').style.cssText = `border-right:5px solid var(--cor1); transition: all 800ms`
-       document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 1; transition: 6s` 
+         document.getElementById('apis-1').style.cssText = `opacity:0; transition: 800ms`
+         setTimeout(() => {
+              document.querySelector('.aba-projetos4').style.cssText = `width:00%; transition: all 500ms;`
+              document.querySelector('.right1').style.cssText = `border-right:5px solid var(--cor1); transition: all 800ms`
+              document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 1; transition: 6s` 
+         }, 1000);
    })
 
 })
@@ -260,11 +268,15 @@ document.querySelector('.right1-mobile').addEventListener('click',()=>{
    setTimeout(() => {
        document.querySelector('.aba-projetos4').style.cssText = `width:90%; transition: all 700ms;`  
    }, 1000);
+   setTimeout(() => {
+      document.getElementById('apis-1').style.cssText = `opacity:1; transition: 800ms`
+   }, 1500);
 
    
    //Fechar
    document.getElementById('close-projetos4').addEventListener('click', ()=>{
       document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
+      document.getElementById('clones-1').style.cssText = `opacity:0; transition: 800ms`
       setTimeout(() => {
        document.querySelector('.aba-projetos4').style.cssText = `width:0%; transition: all 500ms;`
        document.querySelector('#titulo-digitado-projetos').style.cssText = `opacity: 1; transition: 500ms`

@@ -581,6 +581,54 @@
 /*--------------------------------------------------------------*/
 
 
+/*ABA APIS 1*/
+#apis-1 {
+  padding: 10px;
+  width: 50%;
+  height: 200px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0;
+}
+
+#apis-1 span {
+ width: 45%;
+ background-color: rgba(255, 255, 255, 0.116);
+ text-align: center;
+ padding: 5px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ transition: all 500ms;
+ border: 2px solid var(--cor1);
+}
+
+#apis-1 span:nth-child(1):hover {
+transform: skewY(-5deg);
+transform: rotate(-1deg);
+box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.171);
+background-color: var(--cor1);
+color: black;
+transition: all 500ms;
+}
+
+#apis-1 span:nth-child(2):hover {
+transform: skewY(3deg);
+transform: rotate(1deg);
+box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.171);
+background-color: var(--cor1);
+cursor: pointer;
+transition: all 500ms;
+}
+
+
+
+
+/*---------------------------------------------------------------*/
+
+
 /*ABA STRACKS 1*/
 #stacks-1 {
     padding: 10px;
@@ -855,8 +903,8 @@
 
 /*------------------------------------------------------------------*/
 @media (max-width: 950px) {
-  #terceiros-1,#terceiros-2,#jogos-1,#jogos-2,#jogos-3,#clones-1,#clones-2,#stacks-1,#stacks-2,#pessoais-1,#pessoais-2{flex-direction: column; height: auto; width: 70%;}
-  #terceiros-1 span,#terceiros-2 span,#jogos-1 span,#jogos-2 span,#jogos-3 span,#clones-1 span,#clones-2 span,#stacks-1 span,#stacks-2 span,#pessoais-1 span,#pessoais-2 span{width: 100%; height: 50%; margin: 5px; padding: 7px;}
+  #terceiros-1,#terceiros-2,#jogos-1,#jogos-2,#jogos-3,#clones-1,#clones-2,#apis-1,#stacks-1,#stacks-2,#pessoais-1,#pessoais-2{flex-direction: column; height: auto; width: 70%;}
+  #terceiros-1 span,#terceiros-2 span,#jogos-1 span,#jogos-2 span,#jogos-3 span,#clones-1 span,#clones-2 span,#apis-1 span,#stacks-1 span,#stacks-2 span,#pessoais-1 span,#pessoais-2 span{width: 100%; height: 50%; margin: 5px; padding: 7px;}
   .aba-projetos1{height: 100%;}
 }
 /*Menu Mobile*/
