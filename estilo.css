@@ -201,10 +201,6 @@ header {
     overflow: hidden;
 }
 
-#conteudo-central p {
-    margin-bottom:5px;
-    font-size: 25px;
-}
 
 #conteudo-central h1 {
     margin-bottom:5px;
@@ -255,6 +251,7 @@ header {
      color: var(--corTexto);
      margin: 10px;
      width: 100px;
+     cursor: pointer;
 }
 
 #btn-git:hover {
@@ -273,6 +270,7 @@ header {
     color: var(--corTexto);
     margin: 10px;
     width: 100px;
+    cursor: pointer;
 }
 
 #btn-link:hover {
@@ -349,7 +347,7 @@ header {
     height: 80px;
 }
 
-.imgStack1, .imgStack2, .imgStack3, .imgStack4, .imgStack5, .imgStack6, .imgStack7, .imgStack8, .imgStack9, .imgStack10 {
+.imgStack1, .imgStack2, .imgStack3, .imgStack4, .imgStack5, .imgStack6, .imgStack7, .imgStack8, .imgStack9{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -407,12 +405,6 @@ header {
 
 .imgStack9 {
     background-image: url("./img/jquery2.png");
-    opacity: 1;
-    transition: all 700ms;
-}
-
-.imgStack10 {
-    background-image: url("https://img.icons8.com/color/48/undefined/figma--v1.png");
     opacity: 1;
     transition: all 700ms;
 }
@@ -726,6 +718,7 @@ header {
     color: var(--corDetalhes);
     animation-name: btnContatos;
     animation-duration: 2s;
+    cursor: pointer;
 }
 
 #btn-contato-links:hover {
@@ -744,6 +737,7 @@ header {
    color: var(--corDetalhes);
    animation-name: btnContatos2;
    animation-duration: 2s;
+   cursor: pointer;
 }
 
 #btn-contato-form:hover {

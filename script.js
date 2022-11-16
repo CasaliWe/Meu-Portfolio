@@ -125,10 +125,8 @@ document.getElementById('close-mobile').addEventListener('click', ()=>{
           } else if(imgStacks.className =='imgStack8') {
                imgStacks.className = 'imgStack9'
           } else if(imgStacks.className =='imgStack9') {
-               imgStacks.className = 'imgStack10'
-          } else if(imgStacks.className =='imgStack10') {
                imgStacks.className = 'imgStack1'
-          }
+          } 
      }
 
      setInterval(() => {
