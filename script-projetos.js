@@ -16,11 +16,15 @@ document.querySelector('.left1').addEventListener('click', ()=>{
     setTimeout(() => {
       document.getElementById('terceiros-2').style.cssText = `opacity:1; transition: 800ms`
     }, 1600);
+    setTimeout(() => {
+      document.getElementById('terceiros-3').style.cssText = `opacity:1; transition: 800ms`
+    }, 2400);
     
     //Fechar
     document.getElementById('close-projetos1').addEventListener('click', ()=>{
            document.getElementById('terceiros-1').style.cssText = `opacity:0; transition: 800ms`
            document.getElementById('terceiros-2').style.cssText = `opacity:0; transition: 800ms`
+           document.getElementById('terceiros-3').style.cssText = `opacity:0; transition: 800ms`
            setTimeout(() => {
               document.querySelector('.aba-projetos1').style.cssText = `width:0%; transition: all 500ms;`
               document.querySelector('.left1').style.cssText = `border-left:5px solid var(--cor1); transition: all 800ms`
@@ -44,12 +48,24 @@ document.querySelector('.left2').addEventListener('click', ()=>{
    setTimeout(() => {
       document.getElementById('jogos-3').style.cssText = `opacity:1; transition: 800ms`
    }, 2400);
+   setTimeout(() => {
+      document.getElementById('jogos-4').style.cssText = `opacity:1; transition: 800ms`
+   }, 3200);
+   setTimeout(() => {
+      document.getElementById('jogos-5').style.cssText = `opacity:1; transition: 800ms`
+   }, 3600);
+   setTimeout(() => {
+      document.getElementById('jogos-6').style.cssText = `opacity:1; transition: 800ms`
+   }, 4000);
 
    //Fechar
    document.getElementById('close-projetos2').addEventListener('click', ()=>{
          document.getElementById('jogos-1').style.cssText = `opacity:0; transition: 800ms`
          document.getElementById('jogos-2').style.cssText = `opacity:0; transition: 800ms`
          document.getElementById('jogos-3').style.cssText = `opacity:0; transition: 800ms`
+         document.getElementById('jogos-4').style.cssText = `opacity:0; transition: 800ms`
+         document.getElementById('jogos-5').style.cssText = `opacity:0; transition: 800ms`
+         document.getElementById('jogos-6').style.cssText = `opacity:0; transition: 800ms`
          setTimeout(() => {
              document.querySelector('.aba-projetos2').style.cssText = `width:0%; transition: all 500ms;`
              document.querySelector('.left2').style.cssText = `border-left:5px solid var(--cor1); transition: all 800ms`
@@ -144,13 +160,21 @@ document.querySelector('.right3').addEventListener('click', ()=>{
       document.getElementById('pessoais-1').style.cssText = `opacity:1; transition: 800ms`
    }, 800);
    setTimeout(() => {
-   document.getElementById('pessoais-2').style.cssText = `opacity:1; transition: 800ms`
+      document.getElementById('pessoais-2').style.cssText = `opacity:1; transition: 800ms`
    }, 1600);
+   setTimeout(() => {
+      document.getElementById('pessoais-3').style.cssText = `opacity:1; transition: 800ms`
+   }, 2400);
+   setTimeout(() => {
+      document.getElementById('pessoais-4').style.cssText = `opacity:1; transition: 800ms`
+   }, 3200);
 
    //Fechar
    document.getElementById('close-projetos6').addEventListener('click', ()=>{
          document.getElementById('pessoais-1').style.cssText = `opacity:0; transition: 800ms`
          document.getElementById('pessoais-2').style.cssText = `opacity:0; transition: 800ms`
+         document.getElementById('pessoais-3').style.cssText = `opacity:0; transition: 800ms`
+         document.getElementById('pessoais-4').style.cssText = `opacity:0; transition: 800ms`
          setTimeout(() => {
               document.querySelector('.aba-projetos6').style.cssText = `width:0%; transition: all 500ms;`
               document.querySelector('.right3').style.cssText = `border-right:5px solid var(--cor1); transition: all 800ms`
@@ -194,11 +218,15 @@ document.querySelector('.left1-mobile').addEventListener('click',()=>{
      setTimeout(() => {
              document.getElementById('terceiros-2').style.cssText = `opacity:1; transition: 800ms`
      }, 2000);
+     setTimeout(() => {
+             document.getElementById('terceiros-3').style.cssText = `opacity:1; transition: 800ms`
+     }, 2500);
      
      //Fechar
      document.getElementById('close-projetos1').addEventListener('click', ()=>{
         document.getElementById('terceiros-1').style.cssText = `opacity:0; transition: 800ms`
         document.getElementById('terceiros-2').style.cssText = `opacity:0; transition: 800ms`
+        document.getElementById('terceiros-3').style.cssText = `opacity:0; transition: 800ms`
         document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
         setTimeout(() => {
          document.querySelector('.aba-projetos1').style.cssText = `width:0%; transition: all 500ms;`
@@ -216,19 +244,33 @@ document.querySelector('.left2-mobile').addEventListener('click',()=>{
        document.querySelector('.aba-projetos2').style.cssText = `width:90%; transition: all 700ms;`  
    }, 1000);
    setTimeout(() => {
-           document.getElementById('jogos-1').style.cssText = `opacity:1; transition: 800ms`
+      document.getElementById('jogos-1').style.cssText = `opacity:1; transition: 800ms`
    }, 1500);
    setTimeout(() => {
-           document.getElementById('jogos-2').style.cssText = `opacity:1; transition: 800ms`
+      document.getElementById('jogos-2').style.cssText = `opacity:1; transition: 800ms`
    }, 2000);
    setTimeout(() => {
       document.getElementById('jogos-3').style.cssText = `opacity:1; transition: 800ms`
-   }, 2000);
+   }, 2500);
+   setTimeout(() => {
+      document.getElementById('jogos-4').style.cssText = `opacity:1; transition: 800ms`
+   }, 3000);
+   setTimeout(() => {
+      document.getElementById('jogos-5').style.cssText = `opacity:1; transition: 800ms`
+   }, 3400);
+   setTimeout(() => {
+      document.getElementById('jogos-6').style.cssText = `opacity:1; transition: 800ms`
+   }, 3800);
    
    //Fechar
    document.getElementById('close-projetos2').addEventListener('click', ()=>{
       document.getElementById('jogos-1').style.cssText = `opacity:0; transition: 800ms`
       document.getElementById('jogos-2').style.cssText = `opacity:0; transition: 800ms`
+      document.getElementById('jogos-3').style.cssText = `opacity:0; transition: 800ms`
+      document.getElementById('jogos-4').style.cssText = `opacity:0; transition: 800ms`
+      document.getElementById('jogos-5').style.cssText = `opacity:0; transition: 800ms`
+      document.getElementById('jogos-6').style.cssText = `opacity:0; transition: 800ms`
+
       document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
       setTimeout(() => {
        document.querySelector('.aba-projetos2').style.cssText = `width:0%; transition: all 500ms;`
@@ -333,11 +375,19 @@ document.querySelector('.right3-mobile').addEventListener('click',()=>{
    setTimeout(() => {
            document.getElementById('pessoais-2').style.cssText = `opacity:1; transition: 800ms`
    }, 2000);
+   setTimeout(() => {
+           document.getElementById('pessoais-3').style.cssText = `opacity:1; transition: 800ms`
+   }, 2500);
+   setTimeout(() => {
+           document.getElementById('pessoais-4').style.cssText = `opacity:1; transition: 800ms`
+   }, 3000);
    
    //Fechar
    document.getElementById('close-projetos6').addEventListener('click', ()=>{
       document.getElementById('pessoais-1').style.cssText = `opacity:0; transition: 800ms`
       document.getElementById('pessoais-2').style.cssText = `opacity:0; transition: 800ms`
+      document.getElementById('pessoais-3').style.cssText = `opacity:0; transition: 800ms`
+      document.getElementById('pessoais-4').style.cssText = `opacity:0; transition: 800ms`
       document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
       setTimeout(() => {
        document.querySelector('.aba-projetos6').style.cssText = `width:0%; transition: all 500ms;`
