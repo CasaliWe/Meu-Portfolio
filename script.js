@@ -41,7 +41,34 @@ document.getElementById('close-mobile').addEventListener('click', ()=>{
      
 })
 
+
+
+
+
+//Abrir e fechar parte de certificados
+function certificados(){
+     document.getElementById('certificados').style.cssText = `height: 95vh; transition: all 500ms`
+     document.getElementById('arrow-left').style.display = 'none'
+     document.getElementById('arrow-right').style.display = 'none'
+}
+
+function closeCertificados(){
+     document.getElementById('certificados').style.cssText = `height: 0vh; transition: all 500ms`
+     document.getElementById('arrow-left').style.display = 'block'
+     document.getElementById('arrow-right').style.display = 'block'
+}
+
+
+//----------------------------Trocar de certificado------------------------------
+document.getElementById('leftCertificado').addEventListener('click', ()=>{
+     var img = document.getElementById('imgCertificado')
+})
+
+document.getElementById('rightCertificado').addEventListener('click', ()=>{
+     var img = document.getElementById('imgCertificado')
+})
  
+
  
  
  

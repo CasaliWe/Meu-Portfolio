@@ -529,23 +529,112 @@ header {
 
 #conteudo-central2 a {
     padding: 10px;
-    margin-top: 20px;
+    margin: 5px;
+    font-size: 12px;
     border-radius: 10px;
     text-decoration: none;
-    color: var(--corDetalhes);
-    border: 1px solid var(--corDetalhes);
+    color: white;
+    border: 2px solid var(--corDetalhes);
 }
 
 #conteudo-central2 a:hover {
     background-color: rgba(255, 255, 255, 0.13);
-    padding: 13px;
-    margin-top: 23px;
-    border-radius: 13px;
     text-decoration: none;
     color: var(--corDetalhes);
-    border: 1px solid var(--corDetalhes);
+    border: 2px solid var(--corDetalhes);
     transition: all 300ms;
 }
+
+#conteudo-central2 button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid var(--corDetalhes2);
+    background-color: transparent;
+}
+
+#conteudo-central2 button:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+    text-decoration: none;
+    color: var(--corDetalhes2);
+    border: 2px solid var(--corDetalhes2);
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+
+
+
+/*------------------------CERTIFICADOS----------------------*/
+#certificados{
+       position: fixed;
+       top: 0px;
+       height: 0vh;
+       width: 90%;
+       margin: 0 auto;
+       background-color: black;
+       z-index: 10;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       overflow: hidden;
+}
+
+#certificados h1{
+    font-size: 35px;
+    margin-top: 10px;
+    text-align: center;
+    background-image: linear-gradient(to right, #3bd9d9, #b527cf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#certificados div{
+   padding: 10px;
+   width: 70%;
+   margin: 20px auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#certificados div i{
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 400ms;
+ }
+
+ #certificados div i:hover{
+    color: var(--corDetalhes2);
+    transition: all 400ms;
+ }
+
+#certificados div img{
+   width: 60%;
+}
+
+#closeCertificados{
+     background-color: transparent;
+     border: none;
+     color: white;
+     font-size: 20px;
+     cursor: pointer;
+     margin-bottom: 20px;
+}
+
+#closeCertificados:hover{
+    color: var(--corDetalhes2);
+    transition: all 400ms;
+}
+
+
+
+
 
 @media (max-width: 1200px) {
     #conteudo-central2 {padding: 30px;text-align: center;width: 80%;}
@@ -553,8 +642,10 @@ header {
     #img-texto {flex-wrap: wrap;}
     #img-texto img {margin-bottom: 10px; width: 130px;}
     #img-texto p {width: 340px;font-size: 15px;margin-bottom: 5px;}
-    #conteudo-central2 a {padding: 7px;margin-top: 5px; font-size: 15px;}
-    #conteudo-central2 a:hover {padding: 13px;}
+    #conteudo-central2 a {padding: 10px;margin: 5px; font-size: 13px;}
+    #conteudo-central2 a:hover {padding: 10px;}
+    #conteudo-central2 button {padding: 10px;margin: 5px; font-size: 13px;}
+    #conteudo-central2 button:hover {padding: 10px;}
 }
 
 @media (max-width: 700px) {
@@ -564,7 +655,13 @@ header {
     #img-texto img {margin-bottom: 10px; width: 110px;}
     #img-texto p {font-size: 14px;margin-bottom: 5px;}
     #conteudo-central2 a {padding: 8px;margin-top: 7px; font-size: 15px;}
-    #conteudo-central2 a:hover {padding: 10px;}
+    #conteudo-central2 a:hover {padding: 8px;}
+    #conteudo-central2 button {padding: 8px;margin-top: 7px; font-size: 15px;}
+    #conteudo-central2 button:hover {padding: 8px;}
+    #certificados div{padding: 5px;width: 95%;}
+    #certificados h1{font-size: 25px;}
+    #certificados div img{width: 75%;}
+    #certificados div i{color: var(--corDetalhes); font-size: 30px;}
 }
 /*Config conteúdo central2 carousel*/
 
