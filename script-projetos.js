@@ -117,11 +117,15 @@ document.querySelector('.right2').addEventListener('click', ()=>{
    setTimeout(() => {
    document.getElementById('stacks-2').style.cssText = `opacity:1; transition: 800ms`
    }, 1600);
+   setTimeout(() => {
+      document.getElementById('stacks-3').style.cssText = `opacity:1; transition: 800ms`
+   }, 2400);
 
    //Fechar
    document.getElementById('close-projetos5').addEventListener('click', ()=>{
          document.getElementById('stacks-1').style.cssText = `opacity:0; transition: 800ms`
          document.getElementById('stacks-2').style.cssText = `opacity:0; transition: 800ms`
+         document.getElementById('stacks-3').style.cssText = `opacity:0; transition: 800ms`
          setTimeout(() => {
                document.querySelector('.aba-projetos5').style.cssText = `width:0%; transition: all 500ms;`
                document.querySelector('.right2').style.cssText = `border-right:5px solid var(--cor1); transition: all 800ms`
@@ -298,11 +302,15 @@ document.querySelector('.right2-mobile').addEventListener('click',()=>{
    setTimeout(() => {
            document.getElementById('stacks-2').style.cssText = `opacity:1; transition: 800ms`
    }, 2000);
+   setTimeout(() => {
+           document.getElementById('stacks-3').style.cssText = `opacity:1; transition: 800ms`
+   }, 2500);
    
    //Fechar
    document.getElementById('close-projetos5').addEventListener('click', ()=>{
       document.getElementById('stacks-1').style.cssText = `opacity:0; transition: 800ms`
       document.getElementById('stacks-2').style.cssText = `opacity:0; transition: 800ms`
+      document.getElementById('stacks-3').style.cssText = `opacity:0; transition: 800ms`
       document.getElementById('abre-lateral').style.cssText= `opacity: 1;`
       setTimeout(() => {
        document.querySelector('.aba-projetos5').style.cssText = `width:0%; transition: all 500ms;`

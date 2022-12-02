@@ -347,7 +347,7 @@ header {
     height: 80px;
 }
 
-.imgStack1, .imgStack2, .imgStack3, .imgStack4, .imgStack5, .imgStack6, .imgStack7, .imgStack8, .imgStack9{
+.imgStack1, .imgStack2, .imgStack3, .imgStack4, .imgStack5, .imgStack6, .imgStack7, .imgStack8, .imgStack9, .imgStack10, .imgStack11{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -405,6 +405,18 @@ header {
 
 .imgStack9 {
     background-image: url("./img/jquery2.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack10 {
+    background-image: url("https://img.icons8.com/ultraviolet/40/null/react--v1.png");
+    opacity: 1;
+    transition: all 700ms;
+}
+
+.imgStack11 {
+    background-image: url("https://img.icons8.com/color/48/null/firebase.png");
     opacity: 1;
     transition: all 700ms;
 }
