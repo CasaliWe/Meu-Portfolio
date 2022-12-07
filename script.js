@@ -59,13 +59,40 @@ function closeCertificados(){
 }
 
 
+var devweb = 1
+var img = document.getElementById('imgCertificado')
+
 //----------------------------Trocar de certificado------------------------------
 document.getElementById('leftCertificado').addEventListener('click', ()=>{
-     var img = document.getElementById('imgCertificado')
+     if(devweb == 1){
+         img.src = "certificados/devweb4.png"
+         devweb = 4
+     } else if(devweb == 4){
+         img.src = "certificados/devweb3.png"
+         devweb = 3
+     } else if(devweb == 3){
+         img.src = "certificados/devweb2.png"
+         devweb = 2
+     } else if(devweb == 2){
+         img.src = "certificados/devweb1.png"
+         devweb = 1
+     }
 })
 
 document.getElementById('rightCertificado').addEventListener('click', ()=>{
-     var img = document.getElementById('imgCertificado')
+     if(devweb == 1){
+          img.src = "certificados/devweb2.png"
+          devweb = 2
+     } else if(devweb == 2){
+          img.src = "certificados/devweb3.png"
+          devweb = 3
+     } else if(devweb == 3){
+          img.src = "certificados/devweb4.png"
+          devweb = 4
+     } else if(devweb == 4){
+          img.src = "certificados/devweb1.png"
+          devweb = 1
+     } 
 })
  
 
