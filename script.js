@@ -67,15 +67,31 @@ document.getElementById('leftCertificado').addEventListener('click', ()=>{
      if(devweb == 1){
          img.src = "certificados/devweb4.png"
          devweb = 4
+         document.querySelector('#controleCertificados > span:nth-child(1)').style.cssText = `background-color: transparent;`
+         document.querySelector('#controleCertificados > span:nth-child(2)').style.cssText = `background-color: transparent;`
+         document.querySelector('#controleCertificados > span:nth-child(3)').style.cssText = `background-color: transparent;`
+         document.querySelector('#controleCertificados > span:nth-child(4)').style.cssText = `background-color: white;`
      } else if(devweb == 4){
          img.src = "certificados/devweb3.png"
          devweb = 3
+         document.querySelector('#controleCertificados > span:nth-child(1)').style.cssText = `background-color: transparent;`
+         document.querySelector('#controleCertificados > span:nth-child(2)').style.cssText = `background-color: transparent;`
+         document.querySelector('#controleCertificados > span:nth-child(3)').style.cssText = `background-color: white;`
+         document.querySelector('#controleCertificados > span:nth-child(4)').style.cssText = `background-color: transparent;`
      } else if(devweb == 3){
          img.src = "certificados/devweb2.png"
          devweb = 2
+         document.querySelector('#controleCertificados > span:nth-child(1)').style.cssText = `background-color: transparent;`
+         document.querySelector('#controleCertificados > span:nth-child(2)').style.cssText = `background-color: white;`
+         document.querySelector('#controleCertificados > span:nth-child(3)').style.cssText = `background-color: transparent;`
+         document.querySelector('#controleCertificados > span:nth-child(4)').style.cssText = `background-color: transparent;`
      } else if(devweb == 2){
          img.src = "certificados/devweb1.png"
          devweb = 1
+         document.querySelector('#controleCertificados > span:nth-child(1)').style.cssText = `background-color: white;`
+         document.querySelector('#controleCertificados > span:nth-child(2)').style.cssText = `background-color: transparent;`
+         document.querySelector('#controleCertificados > span:nth-child(3)').style.cssText = `background-color: transparent;`
+         document.querySelector('#controleCertificados > span:nth-child(4)').style.cssText = `background-color: transparent;`
      }
 })
 
@@ -83,15 +99,31 @@ document.getElementById('rightCertificado').addEventListener('click', ()=>{
      if(devweb == 1){
           img.src = "certificados/devweb2.png"
           devweb = 2
+          document.querySelector('#controleCertificados > span:nth-child(1)').style.cssText = `background-color: transparent;`
+          document.querySelector('#controleCertificados > span:nth-child(2)').style.cssText = `background-color: white;`
+          document.querySelector('#controleCertificados > span:nth-child(3)').style.cssText = `background-color: transparent;`
+          document.querySelector('#controleCertificados > span:nth-child(4)').style.cssText = `background-color: transparent;`
      } else if(devweb == 2){
           img.src = "certificados/devweb3.png"
           devweb = 3
+          document.querySelector('#controleCertificados > span:nth-child(1)').style.cssText = `background-color: transparent;`
+          document.querySelector('#controleCertificados > span:nth-child(2)').style.cssText = `background-color: transparent;`
+          document.querySelector('#controleCertificados > span:nth-child(3)').style.cssText = `background-color: white;`
+          document.querySelector('#controleCertificados > span:nth-child(4)').style.cssText = `background-color: transparent;`
      } else if(devweb == 3){
           img.src = "certificados/devweb4.png"
           devweb = 4
+          document.querySelector('#controleCertificados > span:nth-child(1)').style.cssText = `background-color: transparent;`
+          document.querySelector('#controleCertificados > span:nth-child(2)').style.cssText = `background-color: transparent;`
+          document.querySelector('#controleCertificados > span:nth-child(3)').style.cssText = `background-color: transparent;`
+          document.querySelector('#controleCertificados > span:nth-child(4)').style.cssText = `background-color: white;`
      } else if(devweb == 4){
           img.src = "certificados/devweb1.png"
           devweb = 1
+          document.querySelector('#controleCertificados > span:nth-child(1)').style.cssText = `background-color: white;`
+          document.querySelector('#controleCertificados > span:nth-child(2)').style.cssText = `background-color: transparent;`
+          document.querySelector('#controleCertificados > span:nth-child(3)').style.cssText = `background-color: transparent;`
+          document.querySelector('#controleCertificados > span:nth-child(4)').style.cssText = `background-color: transparent;`
      } 
 })
  
